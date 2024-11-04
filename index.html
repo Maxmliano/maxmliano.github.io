@@ -13,6 +13,8 @@
     <link href="/static/favicon.svg" rel="icon">
     <!-- Custom CSS -->
     <link href="/static/styles.css" rel="stylesheet">
+    <!-- Main JS script-->
+    <script src="static/script.js"></script>
 
     <title>Maximiliano - 
     Data Scientist - Audit Accountant - Python Web Developer
@@ -39,6 +41,59 @@
         </div>
     </nav>
     <main class="page-content" aria-label="Content">
+        <div class="matrix-wrapper">
+            <div class="matrix-container" id="matrix">
+                <!-- Títulos de columna -->
+                <div></div> <!-- Espacio vacío en la esquina superior izquierda -->
+                <div class="header-column">Management & Collaboration</div>
+                <div class="header-column">Requirements & UX</div>
+                <div class="header-column">Architecture & Design</div>
+                <div class="header-column">Implementation</div>
+                <div class="header-column">Testing</div>
+                <div class="header-column">Deployment & operations</div>
+                <div class="header-column">Environment & Automation</div>
+        
+                <!-- Títulos de fila y elementos de la matriz -->
+                <div class="header-row">Desktop</div>
+                <div class="matrix-item highlight-red" data-text="Cuadro 1"></div>
+                <div class="matrix-item" data-text="Cuadro 2"></div>
+                <div class="matrix-item" data-text="Cuadro 3"></div>
+                <div class="matrix-item" data-text="Cuadro 4"></div>
+                <div class="matrix-item" data-text="Cuadro 5"></div>
+                <div class="matrix-item" data-text="Cuadro 6"></div>
+                <div class="matrix-item" data-text="Cuadro 7"></div>
+        
+                <div class="header-row">Mobile</div>
+                <div class="matrix-item" data-text="Cuadro 8"></div>
+                <div class="matrix-item" data-text="Cuadro 9"></div>
+                <div class="matrix-item with-icon" data-text="Cuadro 10"><span class="icon">&#9733;</span></div>
+                <div class="matrix-item" data-text="Cuadro 11"></div>
+                <div class="matrix-item" data-text="Cuadro 12"></div>
+                <div class="matrix-item" data-text="Cuadro 13"></div>
+                <div class="matrix-item" data-text="Cuadro 14"></div>
+        
+                <!-- Repite el mismo patrón para las filas restantes -->
+        
+                <div class="header-row">Client-side Web</div>
+                <div class="matrix-item" data-text="Cuadro 15"></div>
+                <div class="matrix-item" data-text="Cuadro 16"></div>
+                <div class="matrix-item" data-text="Cuadro 17"></div>
+                <div class="matrix-item" data-text="Cuadro 18"></div>
+                <div class="matrix-item" data-text="Cuadro 19"></div>
+                <div class="matrix-item" data-text="Cuadro 20"></div>
+                <div class="matrix-item" data-text="Cuadro 21"></div>
+        
+                <!-- Añadir las demás filas hasta llegar a 9 en total -->
+        
+            </div>
+        
+            <!-- Texto de crédito -->
+            <div class="credit-text">Elaboración propia en base a Stack.bio</div>
+        </div>
+        
+        <!-- Tooltip flotante -->
+        <div class="tooltip" id="tooltip"></div>
+
         
     <div class="wrapper">
         <div class="home">
