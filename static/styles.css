@@ -32,7 +32,7 @@ nav .navbar-brand .green {
 /* Contenedor de la cuadrícula */
 .matrix-container {
     display: grid;
-    grid-template-columns: 100px repeat(7, minmax(80px, 1fr));
+    grid-template-columns: 150px repeat(7, minmax(80px, 1fr));
     grid-template-rows: 50px repeat(9, minmax(80px, 1fr));
     gap: 10px;
 }
