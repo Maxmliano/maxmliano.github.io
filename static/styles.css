@@ -45,7 +45,7 @@ nav .navbar-brand .green {
     font-weight: bold;
     color: #333;
     background-color: rgb(161, 195, 226);
-    font-size: min(1vw, 14px);
+    font-size: min(3vw, 14px);
     min-height: 60px;
     border-radius: 8px;
 }
@@ -58,7 +58,7 @@ nav .navbar-brand .green {
     font-weight: bold;
     color: white;
     background-color: rgb(19, 63, 105);
-    font-size: min(1vw, 14px);
+    font-size: min(3vw, 14px);
     min-height: 60px;
     border-radius: 8px;
 }
