@@ -40,6 +40,36 @@
         </div>
     </nav>
     <main class="page-content" aria-label="Content">
+        <h1>Automatización de Prueba de Auditoría con Python y Flask</h1>
+
+    <p>
+        Este desarrollo utiliza Python, desplegado mediante el framework Flask, para automatizar una prueba de auditoría centrada en la validación del valor cuota de instrumentos financieros. Esta prueba se realizaba de manera manual, consultando la información en el sitio público de la CMF, lo cual resultaba en un proceso extenso y propenso a errores. Con esta herramienta, el objetivo es optimizar la extracción de información mediante un sistema de scraping del sitio web, que consolida automáticamente los datos en un archivo Excel.
+    </p>
+
+    <h2>Objetivo del Proyecto</h2>
+    <p>
+        El principal objetivo de esta herramienta es reducir el tiempo de ejecución de la prueba de auditoría y minimizar el margen de error. La automatización permite obtener datos de manera rápida y precisa, eliminando la necesidad de realizar consultas manuales y facilitando la consolidación de la información en un formato estandarizado.
+    </p>
+
+    <h2>Características del Sistema</h2>
+    <ul>
+        <li>
+            <strong>Scraping de Datos:</strong> La herramienta accede al sitio web público y extrae automáticamente la información necesaria de los instrumentos financieros, tales como el valor cuota y otros detalles relevantes. Esta extracción está programada para ejecutarse de de manera personalizada, de acuerdo al fondo que se quiera auditar.
+        </li>
+        <li>
+            <strong>Despliegue en Flask:</strong> El sistema utiliza Flask como framework para el despliegue, proporcionando una interfaz simple donde los auditores pueden ejecutar el proceso de validación y descarga de los datos en tiempo real.
+        </li>
+        <li>
+            <strong>Consolidación de Datos en Excel:</strong> Una vez obtenidos los datos, la herramienta organiza y guarda la información en un archivo Excel con formato predefinido. Esto facilita el análisis de los resultados y permite integrarlos en otros informes de auditoría.
+        </li>
+    </ul>
+
+    <h2>Ejemplos de Referencia</h2>
+    <div class="image-gallery">
+        <img src="static_proyectos/Scrapping1.jpg" alt="Interfaz de la Herramienta en Flask" class="responsive-image">
+        <img src="static_proyectos/Scrapping2.jpg" alt="Consolidación de Datos en Excel" class="responsive-image">
+    </div>
+
     </main>
     <footer class="mb-5 small text-center text-muted">
         <!-- Footer content -->

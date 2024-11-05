@@ -40,6 +40,52 @@
         </div>
     </nav>
     <main class="page-content" aria-label="Content">
+    <h1>Desarrollo de Prototipos Simples en Arduino</h1>
+
+    <p>
+        Desde que descubrí Arduino, he estado entusiasmado con la posibilidad de crear mis propios proyectos de electrónica a modo de Hobby. he desarrollado varios prototipos simples que me han permitido explorar la programación y la electrónica de una manera divertida y accesible.
+    </p>
+
+    <h2>Proyectos que He Desarrollado</h2>
+    <p>
+        Algunos de los proyectos más destacados que he realizado incluyen:
+    </p>
+    <ul>
+        <li>
+            <strong>Controlador de Motor:</strong> En este proyecto, utilicé un motor DC que se puede controlar fácilmente con Arduino. Implementé un circuito simple que me permitió regular la velocidad y dirección del motor.
+        </li>
+        <li>
+            <strong>Servo con Luz Parpadeante:</strong> Desarrollé un prototipo donde un servo mueve un pequeño brazo mientras una luz LED parpadea. Este proyecto me ayudó a comprender cómo funcionan los servos y las señales PWM.
+        </li>
+        <li>
+            <strong>Sistema de Alarma con Sensor de Movimiento:</strong> Utilizando un sensor PIR, creé un sistema que activa una alarma cuando detecta movimiento. Este proyecto me dio ideas para posibles aplicaciones de seguridad.
+        </li>
+        <li>
+            <strong>Estación Meteorológica Básica:</strong> Implementé un sistema que mide la temperatura utilizando un sensor LM35. Pude visualizar los datos en tiempo real en una pequeña pantalla LCD, lo que fue un gran aprendizaje sobre la interacción de hardware y software.
+        </li>
+    </ul>
+
+    <div class="image-gallery">
+        <img src="static_proyectos/Arduino1.jpeg" alt="Sensor Temperatura con Pantalla OLED" class="reference-image">
+    </div>
+
+    <p>A continuación, se muestra un ejemplo de código en Arduino para encender un LED:</p>
+
+    <div class="code-container">
+        <pre><code>
+            void setup() {
+                pinMode(13, OUTPUT); // Configura el pin 13 como salida
+            }
+
+            void loop() {
+                digitalWrite(13, HIGH); // Enciende el LED
+                delay(1000);            // Espera un segundo
+                digitalWrite(13, LOW);  // Apaga el LED
+                delay(1000);            // Espera un segundo
+            }
+        </code></pre>
+        
+    </div>
     </main>
     <footer class="mb-5 small text-center text-muted">
         <!-- Footer content -->

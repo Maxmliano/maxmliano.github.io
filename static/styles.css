@@ -110,3 +110,21 @@ nav .navbar-brand .green {
     text-align: center;
     color: #333;
 }
+.responsive-image {
+    width: 100%;
+    max-width: 800px; /* Tamaño máximo opcional */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Centrado con margen automático */
+    margin: 0 auto;
+}
+.code-container {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: auto; /* Para que se desplace horizontalmente si es necesario */
+}
+code {
+    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+    color: #333;
+}
