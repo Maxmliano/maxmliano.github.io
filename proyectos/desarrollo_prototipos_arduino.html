@@ -69,22 +69,78 @@
         <img src="static_proyectos/Arduino1.jpeg" alt="Sensor Temperatura con Pantalla OLED" class="reference-image">
     </div>
 
-    <p>A continuación, se muestra un ejemplo de código en Arduino para encender un LED:</p>
+    <p>A continuación, se muestra un ejemplo de código en Arduino para registrar temperatura de un LM35 y mostrarla en pantalla:</p>
 
     <div class="code-container">
         <pre><code>
+            #define __DEBUG__
+ 
+            #include <SPI.h>
+            #include <Wire.h>
+            #include <Adafruit_GFX.h>
+            #include <Adafruit_SSD1306.h>
+             
+            // Definir constantes
+            #define ANCHO_PANTALLA 128 // ancho pantalla OLED
+            #define ALTO_PANTALLA 64 // alto pantalla OLED
+            // Objeto de la clase Adafruit_SSD1306
+            Adafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, -1);
+            
+            // Declaracion de variables globales
+            float tempC; // Variable para almacenar el valor obtenido del sensor (0 a 1023)
+            int pinLM35 = 0; // Variable del pin de entrada del sensor (A0)
+            
             void setup() {
-                pinMode(13, OUTPUT); // Configura el pin 13 como salida
+              // Cambiamos referencia de las entradas analógicas
+              analogReference(INTERNAL);
+              
+              // Configuramos el puerto serial a 9600 bps
+              Serial.begin(9600);
+              // Iniciar pantalla OLED en la dirección 0x3C
+              if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+            #ifdef __DEBUG__
+                Serial.println("No se encuentra la pantalla OLED");
+            #endif
             }
-
+            }
             void loop() {
-                digitalWrite(13, HIGH); // Enciende el LED
-                delay(1000);            // Espera un segundo
-                digitalWrite(13, LOW);  // Apaga el LED
-                delay(1000);            // Espera un segundo
+              // Con analogRead leemos el sensor, recuerda que es un valor de 0 a 1023
+              tempC = analogRead(pinLM35); 
+            
+              // Serial.print("mvLectura: ");
+             // Serial.print(tempC);
+              // Salto de línea
+             // Serial.print("\n");   
+            
+              // Calculamos la temperatura con la fórmula
+              tempC = (tempC * 1.1 * 100 / 1024); 
+            
+              // Envia el dato al puerto serial
+             // Serial.print(tempC);
+              // Salto de línea
+             // Serial.print("\n");
+            
+                // Limpiar buffer
+              display.clearDisplay();
+             
+              // Tamaño del texto
+              display.setTextSize(1);
+              // Color del texto
+              display.setTextColor(SSD1306_WHITE);
+              // Posición del texto
+              display.setCursor(10, 32);
+              // Escribir texto
+              display.println(tempC);
+             
+              // Enviar a pantalla
+              display.display();
+             
+              
+              // Esperamos un tiempo para repetir el loop
+              delay(1000);
             }
         </code></pre>
-        
+
     </div>
     </main>
     <footer class="mb-5 small text-center text-muted">
