@@ -24,13 +24,16 @@ nav .navbar-brand .green {
 .matrix-wrapper {
     display: inline-block;
     margin: 20px;
+    width: 100%;
+    max-width: 90vw;
+    overflow-x: auto;
 }
 
 /* Contenedor de la cuadrícula */
 .matrix-container {
     display: grid;
-    grid-template-columns: 50px repeat(7, 100px);
-    grid-template-rows: 50px repeat(9, 100px);
+    grid-template-columns: 100px repeat(7, minmax(80px, 1fr));
+    grid-template-rows: 50px repeat(9, minmax(80px, 1fr));
     gap: 10px;
 }
 
@@ -42,7 +45,8 @@ nav .navbar-brand .green {
     font-weight: bold;
     color: #333;
     background-color: rgb(161, 195, 226);
-    font-size: 14px;
+    font-size: 1vw;
+    min-height: 60px;
     border-radius: 8px;
 }
 
@@ -54,21 +58,21 @@ nav .navbar-brand .green {
     font-weight: bold;
     color: white;
     background-color: rgb(19, 63, 105);
-    font-size: 14px;
+    font-size: 1vw;
+    min-height: 60px;
     border-radius: 8px;
 }
 
 /* Estilos para cada cuadro de la matriz */
 .matrix-item {
     position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(235, 235, 235);
-    /* Color uniforme para todos los cuadros */
+    background-color: rgb(235, 235, 235); /* Color uniforme para todos los cuadros */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    font-size: 1vw;
+    min-width: 80px;
+    min-height: 80px;
     color: white;
     cursor: pointer;
     border-radius: 8px;
@@ -81,9 +85,8 @@ nav .navbar-brand .green {
 
 /* Icono central dentro de algunos cuadros */
 .icon {
-    font-size: 24px;
-    color: #333;
-    /* Color del icono */
+    font-size: 2vw;
+    color: #333; /* Color del icono */
 }
 
 /* Cuadro de texto emergente */
@@ -93,18 +96,17 @@ nav .navbar-brand .green {
     color: #fff;
     padding: 8px;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 0.9vw;
     display: none;
     white-space: nowrap;
     z-index: 1000;
-    transform: translateX(110%);
-    /* Posiciona el tooltip a la derecha */
+    transform: translateX(110%); /* Posiciona el tooltip a la derecha */
 }
 
 /* Texto de crédito */
 .credit-text {
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 1vw;
     text-align: center;
     color: #333;
 }
