@@ -1,0 +1,72 @@
+---
+title: "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)"
+description: "Implementación de visión artificial y Edge AI en un vehículo a radio control utilizando NVIDIA Jetson Orin Nano y el modelo YOLOv8n optimizado para navegación y detección de obstáculos."
+author: "Maximiliano Antonio Mena Pinto"
+date: "2024-10-15"
+categories: [Edge AI, Computer Vision, YOLOv8, Jetson Orin Nano, Python, Robótica, PyTorch]
+---
+
+## Resumen del Proyecto
+
+Este proyecto combina **robótica móvil** e **inteligencia artificial en el borde (*Edge Computing*)** mediante la integración de un chasis de vehículo a radio control (RC) con una computadora monoplaca **NVIDIA Jetson Orin Nano**. 
+
+El objetivo principal es dotar al vehículo de capacidades de percepción visual autónoma en tiempo real, permitiendo identificar peatones, vehículos, obstáculos y señales de tránsito directamente en el dispositivo (*on-device inference*), sin depender de conexión a servidores externos o latencias de red.
+
+---
+
+## Arquitectura del Sistema
+
+El sistema se estructura en tres capas principales:
+
+### 1. Percepción Visual (Edge AI)
+- **Captura:** Sensor de cámara gran angular de alta velocidad (CSI/USB).
+- **Modelo:** Arquitectura **YOLOv8n** (*nano*), seleccionada por su óptimo balance entre precisión (mAP) y costo computacional.
+- **Aceleración:** Conversión del modelo a formato **ONNX** y optimización con el motor **NVIDIA TensorRT** para aprovechar los núcleos Tensor y la arquitectura Ampere de la Jetson Orin Nano, logrando una tasa de inferencia superior a 30 FPS en resolución HD.
+
+### 2. Procesamiento y Lógica de Decisión (Python)
+- Filtrado de detecciones por umbrales de confianza (*confidence threshold*) y supresión de no máximos (NMS).
+- Estimación de proximidad y posición espacial relativa de los obstáculos detectados respecto al campo de visión del vehículo.
+- Máquina de estados para maniobras evasivas o seguimiento de trayectorias.
+
+### 3. Actuación y Control de Hardware
+- Interconexión entre la Jetson y el controlador de motores (ESC / Servomotores) para la modulación de aceleración y dirección.
+- Monitoreo de telemetría y estado de la batería mediante protocolo serial/I2C.
+
+---
+
+## Flujo de Inferencia en Tiempo Real
+
+```text
+[ Sensor de Cámara ] 
+        │ (Frame a 60fps)
+        ▼
+[ Preprocesamiento en OpenCV (Resize / BGR to RGB / Normalización) ]
+        │
+        ▼
+[ Motor de Inferencia TensorRT / YOLOv8n (FP16) ]
+        │ (Bounding Boxes, Clases, Confianza)
+        ▼
+[ Lógica de Navegación & Control de Dirección ]
+        │ (Señales PWM)
+        ▼
+[ Servos de Dirección & Motores de Tracción ]
+```
+
+---
+
+## Stack Tecnológico
+
+- **Hardware:** NVIDIA Jetson Orin Nano (8GB), Chasis RC proporcional, Cámara Gran Angular.
+- **Lenguaje:** Python 3.10+
+- **Librerías de Visión & ML:** PyTorch, Ultralytics YOLOv8, OpenCV, CUDA, cuDNN, TensorRT.
+- **Protocolos:** I2C, UART Serial, PWM.
+
+---
+
+## Próximos Pasos y Extensiones
+
+- [ ] Incorporación de odometría visual (VIO) y LiDAR 2D para mapeo y localización simultánea (SLAM).
+- [ ] Entrenamiento de un modelo personalizado (*fine-tuning*) con clases específicas de entorno urbano a escala.
+- [ ] Implementación de navegación basada en ROS 2 (Robot Operating System).
+
+*(Espacio reservado para agregar fotografías y videos demostrativos del vehículo en funcionamiento).*

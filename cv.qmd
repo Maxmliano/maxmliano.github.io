@@ -1,0 +1,182 @@
+---
+title: "Currículum Vitae"
+subtitle: "Maximiliano Antonio Mena Pinto · Data Scientist & Contador Auditor"
+page-layout: article
+title-block-banner: false
+toc: true
+---
+
+::: {.cv-action-bar}
+::: {.flex-grow-1}
+**Versión para impresión o archivo:** Puedes descargar el documento oficial en formato PDF en cualquiera de los dos idiomas:
+:::
+:::
+::: {.d-flex .gap-2 .flex-wrap .mb-4}
+[📥 Descargar CV en Español (PDF)](assets/cv/CV_Maximiliano_Mena_Pinto_ES.pdf){.btn .btn-primary target="_blank"}
+[📥 Download CV in English (PDF)](assets/cv/CV_Maximiliano_Mena_Pinto_EN.pdf){.btn .btn-outline-primary target="_blank"}
+:::
+
+---
+
+## 🎯 Perfil Profesional
+
+Data Scientist cursando un **Magíster en Estadística** con sólida base cuantitativa. Experto en el diseño, implementación y mantención de modelos de machine learning y estadística avanzada para la optimización de procesos que involucran múltiples áreas y niveles en organizaciones complejas. 
+
+Reconocido en entornos corporativos de alta exigencia por mi dedicación técnica, visión estratégica de negocio y liderazgo en productos de datos escalables.
+
+---
+
+## 💼 Experiencia Laboral
+
+::: {.timeline-item}
+[Julio 2022 – Presente · Santiago, Chile]{.timeline-period}
+
+### Senior A — Data Science
+**KPMG Chile**
+
+- **Liderazgo Técnico y Estratégico:** Encargado del diseño, desarrollo y paso a producción de soluciones de Data Science, actuando como nexo estratégico entre la gerencia y el equipo técnico para traducir necesidades del negocio en productos de datos escalables.
+- **Modelo de Ocupación Predictivo:** Implementación *end-to-end* de un modelo de regresión multinivel para optimizar la tasa de ocupación de recursos de auditoría según demanda histórica y estacionalidad.
+- **Detección de Anomalías Contables:** Sistema automatizado basado en la Ley de Benford, complementado con procesamiento óptico de caracteres (OCR) para auditoría de documentos no estructurados.
+- **Predicción de Rotación y Staffing:** Modelo predictivo de rotación de personal (alertas de staffing por salidas, licencias y vacaciones), construyendo el pipeline completo desde SQL Server hasta su despliegue y actualización automatizada en Power BI Server.
+:::
+
+::: {.timeline-item}
+[Febrero 2022 – Junio 2022 · Santiago, Chile]{.timeline-period}
+
+### Senior B — Planificación y Operaciones
+**KPMG Chile**
+
+- **Optimización de Procesos:** Generación y mejora continua de herramientas para el proceso de planificación de la firma empleando Microsoft Power Platform (Power BI y PowerApps).
+- **Analítica Financiera:** Creación de modelos analíticos y proyecciones para la toma de decisiones presupuestarias y asignación eficiente de personal.
+:::
+
+::: {.timeline-item}
+[Febrero 2020 – Febrero 2022 · Santiago, Chile]{.timeline-period}
+
+### Staff A – Semi Senior B — Auditoría y Analítica
+**KPMG Chile**
+
+- **Auditoría con Analítica de Datos:** Ejecución y supervisión de pruebas sustantivas sobre registros contables de grandes corporaciones empleando CaseWare IDEA y herramientas computacionales.
+- **KPIs de Gestión:** Diseño y monitoreo de indicadores clave de desempeño para el área de planificación de auditoría.
+:::
+
+::: {.timeline-item}
+[Diciembre 2018 – Marzo 2019 · Santiago, Chile]{.timeline-period}
+
+### Práctica Profesional
+**KPMG Chile**
+
+- Ejecución de pruebas sustantivas contables, arqueos, tomas de inventario físico y procesamiento de bases de datos.
+- Distinguido por jefatura y pares con el *Premio al Mejor Desempeño* y *Premio al Mejor Compañero*.
+:::
+
+---
+
+## 🎓 Formación Académica
+
+- **Magíster en Estadística (En curso, 2025 – 2027)**  
+  *Pontificia Universidad Católica de Chile*  
+  *Tesis en proceso:* Redes Neuronales Bayesianas para aplicaciones en Farmacocinética / Farmacodinámica.
+
+- **Diplomado de Postítulo en Ingeniería de Software (2024)**  
+  *Universidad de Chile* · Aprobado con promedio 6,4 / 7,0.
+
+- **Diplomado en Big Data y Machine Learning (2022)**  
+  *Pontificia Universidad Católica de Chile* · Aprobado con promedio 6,9 / 7,0.
+
+- **Diplomado en Auditoría a la Ciberseguridad (2021)**  
+  *Universidad de Santiago de Chile* · Aprobado con promedio 6,4 / 7,0.
+
+- **Contador Auditor — Licenciado en Contabilidad y Auditoría (2014 – 2020)**  
+  *Universidad de Chile* · Aprobado con Distinción (5,0 / 7,0).
+
+---
+
+## 📚 Publicaciones Científicas
+
+::: {.callout-note icon=false}
+### 📄 The Pharmacogenomics Journal (Nature Portfolio, 2026)
+**"Cost-effectiveness of genotype-guided acenocoumarol therapy in atrial fibrillation: a pharmacogenomic simulation study in the chilean population"**  
+Investigación sobre evaluación económica y modelos de Markov para tratamientos farmacogenéticos guiados por ADN.  
+🔗 [Ver artículo (DOI: 10.1038/s41397-026-00411-7)](https://doi.org/10.1038/s41397-026-00411-7){target="_blank"}
+:::
+
+---
+
+## 🛠️ Habilidades Técnicas
+
+::: {.row .g-3}
+::: {.col-md-6}
+##### 🤖 Data Science & Machine Learning
+::: {.skill-pills}
+[Python]{.skill-pill}
+[R]{.skill-pill}
+[PyTorch]{.skill-pill}
+[TensorFlow]{.skill-pill}
+[Inferencia Causal / DoE]{.skill-pill}
+[Redes Neuronales Bayesianas]{.skill-pill}
+:::
+
+##### 📊 Business Intelligence & Low-Code
+::: {.skill-pills}
+[Power BI & DAX]{.skill-pill}
+[PowerApps]{.skill-pill}
+[Power Automate]{.skill-pill}
+[SharePoint]{.skill-pill}
+[Microsoft 365]{.skill-pill}
+:::
+:::
+
+::: {.col-md-6}
+##### 🗄️ Datos, Cloud & Auditoría
+::: {.skill-pills}
+[SQL]{.skill-pill}
+[Google BigQuery]{.skill-pill}
+[AWS]{.skill-pill}
+[Azure]{.skill-pill}
+[Git / GitHub]{.skill-pill}
+[SAP]{.skill-pill}
+[CaseWare IDEA]{.skill-pill}
+:::
+
+##### ⚡ Hardware, IoT & Robótica
+::: {.skill-pills}
+[C / C++]{.skill-pill}
+[Arduino]{.skill-pill}
+[NVIDIA Jetson Orin Nano]{.skill-pill}
+[YOLOv8 & OpenCV]{.skill-pill}
+[HTML5 / CSS3 / JS]{.skill-pill}
+[Gestión de Stakeholders]{.skill-pill}
+:::
+:::
+:::
+
+---
+
+## 🗣️ Idiomas
+
+- **Inglés:** Nivel Avanzado / C2 Proficient (EF SET 77/100).
+- **Alemán:** Nivel Básico.
+- **Español:** Nativo.
+
+---
+
+## 📜 Certificados y Cursos Destacados
+
+- **Microsoft Power BI Data Analyst** — Coursera (2024)
+- **Arduino Junior Certification** — Arduino (2024)
+- **Google Data Analytics** — Coursera (2023)
+- **CS50X: Introduction to Computer Science** — HarvardX (2022)
+- **Importing & Cleaning Data with Python Track** — DataCamp (2022)
+- **JavaScript** — CoderHouse (2022) *(Top 10 de la cursada)*
+- **Introducción a la Programación con Python** — Desafío LATAM (2021)
+- **Power BI: Herramientas básicas para el análisis de datos** — Teleduc UC (2021)
+- **Gestión Presupuestaria, Contabilidad Gubernamental y NICSP** — Teleduc UC (2021)
+
+---
+
+## 🏆 Reconocimientos
+
+- **Premio al Mejor Desempeño de la Temporada** — KPMG Chile (2022)
+- **Premio al Mejor Desempeño como Practicante** — KPMG Chile (2019)
+- **Premio al Mejor Compañero como Practicante** — KPMG Chile (2019)

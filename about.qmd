@@ -1,0 +1,70 @@
+---
+title: "Maximiliano Antonio Mena Pinto"
+subtitle: "Data Scientist & Contador Auditor | Magíster (c) en Estadística (UC)"
+about:
+  template: solana
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/maximiliano-mena-pinto/
+      aria-label: LinkedIn
+    - icon: github
+      text: GitHub
+      href: https://github.com/maxmliano
+      aria-label: GitHub
+    - icon: envelope
+      text: Email
+      href: mailto:mmena@fen.uchile.cl
+      aria-label: Email
+    - icon: file-earmark-pdf-fill
+      text: "CV en Español (PDF)"
+      href: assets/cv/CV_Maximiliano_Mena_Pinto_ES.pdf
+    - icon: file-earmark-pdf
+      text: "CV in English (PDF)"
+      href: assets/cv/CV_Maximiliano_Mena_Pinto_EN.pdf
+---
+
+## Biografía Profesional
+
+Soy **Data Scientist** con sólida base cuantitativa y formación como **Contador Auditor de la Universidad de Chile**. Actualmente curso el **Magíster en Estadística en la Pontificia Universidad Católica de Chile**, donde desarrollo mi tesis de investigación en *Redes Neuronales Bayesianas para aplicaciones en Farmacocinética y Farmacodinámica*.
+
+Me desempeño como **Senior A de Data Science en KPMG Chile**, actuando como nexo estratégico entre la alta dirección y los equipos técnicos para transformar desafíos de negocio en productos de datos escalables y de alto impacto operativo. 
+
+Cuento con amplia experiencia en la implementación *end-to-end* de modelos estadísticos y de machine learning: desde la ingesta y arquitectura de pipelines en SQL/Python, hasta su integración en plataformas de visualización (Power BI) y despliegue productivo.
+
+---
+
+## Áreas de Especialización
+
+- **Modelado Estadístico & Machine Learning:** Inferencia causal, modelos jerárquicos/multinivel, detección de anomalías y redes neuronales bayesianas.
+- **Auditoría Algorítmica y Control:** Automatización de pruebas sustantivas, análisis de Ley de Benford y procesamiento documental no estructurado con OCR.
+- **Arquitectura de Datos & BI:** Modelado multidimensional, DAX avanzado, pipelines SQL, Power Apps y automatizaciones en Microsoft 365.
+- **Hardware & Edge AI:** Experimentación en robótica, microcontroladores Arduino y visión computacional (YOLOv8 en Jetson Orin Nano).
+
+---
+
+## Formación Académica
+
+- **Magíster en Estadística (En curso, 2025 – 2027)**  
+  *Pontificia Universidad Católica de Chile*  
+  *Tesis:* Redes Neuronales Bayesianas aplicadas a Farmacocinética/Farmacodinámica.
+
+- **Diplomado de Postítulo en Ingeniería de Software (2024)**  
+  *Universidad de Chile* · Calificación: 6,4 / 7,0.
+
+- **Diplomado en Big Data y Machine Learning (2022)**  
+  *Pontificia Universidad Católica de Chile* · Calificación: 6,9 / 7,0.
+
+- **Diplomado en Auditoría a la Ciberseguridad (2021)**  
+  *Universidad de Santiago de Chile* · Calificación: 6,4 / 7,0.
+
+- **Contador Auditor – Licenciado en Contabilidad y Auditoría (2014 – 2020)**  
+  *Universidad de Chile* · Aprobado con Distinción (5,0 / 7,0).
+
+---
+
+## Reconocimientos
+
+- **Premio al Mejor Desempeño de la Temporada (2022)** – *KPMG Chile*.
+- **Premio al Mejor Desempeño como Practicante (2019)** – *KPMG Chile*.
+- **Premio al Mejor Compañero (2019)** – *KPMG Chile*.

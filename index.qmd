@@ -1,0 +1,66 @@
+---
+title: ""
+page-layout: full
+listing:
+  id: proyectos-destacados
+  contents: "proyectos/*/*.qmd"
+  sort: "date desc"
+  type: grid
+  grid-columns: 3
+  image-height: 190px
+  max-items: 6
+  categories: false
+  fields: [image, date, title, description]
+---
+
+::: {.hero-banner}
+::: {.container-fluid}
+# Maximiliano Antonio Mena Pinto {.hero-title}
+
+[Data Scientist & Contador Auditor]{.hero-subtitle .d-block .fs-4 .fw-semibold .mb-2}
+
+Estudiante de **Magíster en Estadística** en la Pontificia Universidad Católica de Chile y **Contador Auditor** titulado con distinción de la Universidad de Chile. Actualmente me desempeño como **Senior A de Data Science en KPMG Chile**, especializándome en el diseño, implementación y puesta en producción de modelos predictivos, sistemas de detección de anomalías y automatización de procesos analíticos complejos.
+
+::: {.hero-badges}
+[📈 Modelado Estadístico & ML]{.hero-badge}
+[🤖 Redes Neuronales Bayesianas]{.hero-badge}
+[🔍 Auditoría Algorítmica & Benford]{.hero-badge}
+[⚡ Python · R · SQL]{.hero-badge}
+[📊 Power Platform & BI]{.hero-badge}
+[🔬 Investigación Biomédica]{.hero-badge}
+:::
+
+::: {.hero-actions}
+<a href="#proyectos" class="hero-btn"><i class="bi bi-folder2-open"></i> Ver Proyectos</a>
+<a href="cv.qmd" class="hero-btn"><i class="bi bi-file-earmark-person"></i> Currículum Vitae</a>
+<a href="about.qmd" class="hero-btn"><i class="bi bi-person-badge"></i> Sobre Mí</a>
+:::
+:::
+:::
+
+## Proyectos Destacados {#proyectos}
+
+Una muestra de mis trabajos más recientes en analítica avanzada, automatización, investigación y sistemas:
+
+::: {#proyectos-destacados}
+:::
+
+::: {.text-center .mt-4 .mb-5}
+[Ver todos los proyectos y publicaciones ➔](proyectos/index.qmd){.btn .btn-outline-primary .btn-lg}
+:::
+
+---
+
+::: {.row .py-4}
+::: {.col-md-6}
+### 🎓 Formación Cuantitativa & Negocio
+Mi perfil combina la visión de negocio, control interno y auditoría contable con la solidez matemática de la estadística y el machine learning para resolver problemas operacionales reales.
+:::
+::: {.col-md-6}
+### 🤝 Conectemos
+¿Interesado en colaborar en iniciativas de datos, modelado estadístico o consultoría técnica?  
+- **Email:** [mmena@fen.uchile.cl](mailto:mmena@fen.uchile.cl)  
+- **LinkedIn:** [linkedin.com/in/maximiliano-mena-pinto/](https://www.linkedin.com/in/maximiliano-mena-pinto/){target="_blank"}  
+- **GitHub:** [github.com/maxmliano](https://github.com/maxmliano){target="_blank"}
+:::
+:::

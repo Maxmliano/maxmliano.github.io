@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Maximiliano Mena Pinto"
+  description: "Portafolio profesional de Maximiliano Mena Pinto - Data Scientist & Contador Auditor"
+  favicon: assets/img/favicon.svg
+  site-url: "https://maxmliano.github.io"
+  
+  navbar:
+    title: "Maximiliano 📈💻🤖"
+    left:
+      - text: "Inicio"
+        href: index.qmd
+      - text: "Proyectos"
+        href: proyectos/index.qmd
+      - text: "Currículum"
+        href: cv.qmd
+      - text: "Sobre Mí"
+        href: about.qmd
+    right:
+      - icon: github
+        href: https://github.com/maxmliano
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/maximiliano-mena-pinto/
+        aria-label: LinkedIn
+      - icon: envelope
+        href: mailto:mmena@fen.uchile.cl
+        aria-label: Email
+
+  page-footer:
+    left: "Maximiliano Antonio Mena Pinto"
+    center: "Construido con [Quarto](https://quarto.org) · Alojado en [GitHub Pages](https://pages.github.com)"
+    right: "[Subir 🔝](#)"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: assets/css/styles.css
+    toc: true
+    toc-depth: 3
+    toc-title: "En esta página"
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap

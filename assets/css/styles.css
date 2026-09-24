@@ -1,0 +1,214 @@
+/* Estilos personalizados para el Portafolio Quarto de Maximiliano */
+
+:root {
+  --primary-accent: #1d72b8;
+  --secondary-accent: #0f3f69;
+  --primary-hover: #155d97;
+}
+
+/* Hero Section en la página de inicio */
+.hero-banner {
+  padding: 3rem 1.5rem 2.5rem 1.5rem;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(135deg, rgba(29, 114, 184, 0.08) 0%, rgba(15, 63, 105, 0.03) 100%);
+  border-radius: 16px;
+  border: 1px solid rgba(29, 114, 184, 0.15);
+}
+
+body.quarto-dark .hero-banner {
+  background: linear-gradient(135deg, rgba(29, 114, 184, 0.15) 0%, rgba(15, 63, 105, 0.25) 100%);
+  border-color: rgba(29, 114, 184, 0.3);
+}
+
+.hero-title {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--bs-primary, #1d72b8);
+  max-width: 800px;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+/* Badges del Hero ajustados: nunca se parten y alineados */
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.75rem;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0.45rem 1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.88rem;
+  line-height: 1.2;
+  background-color: rgba(29, 114, 184, 0.1);
+  color: #1d72b8;
+  border: 1px solid rgba(29, 114, 184, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+body.quarto-dark .hero-badge {
+  background-color: rgba(66, 153, 225, 0.15);
+  color: #90cdf4;
+  border-color: rgba(66, 153, 225, 0.35);
+}
+
+/* Botones de acción del Hero 100% Homologados */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none !important;
+  transition: all 0.25s ease-in-out;
+  background-color: #1d72b8;
+  color: #ffffff !important;
+  border: 1px solid #1d72b8;
+  box-shadow: 0 2px 4px rgba(29, 114, 184, 0.2);
+}
+
+.hero-btn:hover {
+  background-color: #155d97;
+  border-color: #155d97;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(29, 114, 184, 0.3);
+}
+
+/* Badges de Habilidades en CV */
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  white-space: nowrap;
+  background-color: rgba(29, 114, 184, 0.08);
+  border: 1px solid rgba(29, 114, 184, 0.25);
+  color: #1d72b8;
+  transition: all 0.2s ease-in-out;
+}
+
+body.quarto-dark .skill-pill {
+  background-color: rgba(66, 153, 225, 0.15);
+  border-color: rgba(66, 153, 225, 0.35);
+  color: #90cdf4;
+}
+
+.skill-pill:hover {
+  background-color: #1d72b8;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+body.quarto-dark .skill-pill:hover {
+  background-color: #3182ce;
+  color: #ffffff !important;
+}
+
+/* Mejoras en tarjetas de proyectos */
+.quarto-grid-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.quarto-grid-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+/* Galería de imágenes en proyectos */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.project-image {
+  border-radius: 8px;
+  border: 1px solid var(--bs-border-color, #e5e7eb);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Línea de tiempo / Experiencia en CV */
+.timeline-item {
+  border-left: 2px solid #1d72b8;
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #1d72b8;
+  border: 2px solid var(--bs-body-bg, #fff);
+}
+
+.timeline-period {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1d72b8;
+  letter-spacing: 0.5px;
+}
+
+body.quarto-dark .timeline-period {
+  color: #90cdf4;
+}
+
+/* Botones de acción CV */
+.cv-action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  background-color: var(--bs-tertiary-bg, #f8f9fa);
+  border-radius: 12px;
+  border: 1px solid var(--bs-border-color, #dee2e6);
+  align-items: center;
+}

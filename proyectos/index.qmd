@@ -1,0 +1,18 @@
+---
+title: "Proyectos y Publicaciones"
+subtitle: "Exploración aplicada en Data Science, Machine Learning, Automatización de Procesos, Business Intelligence y Robótica."
+listing:
+  contents: "*/*.qmd"
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [image, date, title, description, categories, reading-time]
+  grid-columns: 3
+  image-height: 200px
+page-layout: full
+title-block-banner: true
+---
+
+Aquí encontrarás una selección de desarrollos, investigaciones científicas y soluciones tecnológicas que combinan el rigor cuantitativo, la auditoría y la analítica avanzada.
