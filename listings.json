@@ -1,0 +1,24 @@
+[
+  {
+    "listing": "/proyectos/index.html",
+    "items": [
+      "/proyectos/deteccion-objetos-jetson-yolo/index.html",
+      "/proyectos/robotica-arduino/index.html",
+      "/proyectos/costo-efectividad-farmacogenetica/index.html",
+      "/proyectos/reportes-powerbi-planificacion/index.html",
+      "/proyectos/powerapps-gestion-equipos/index.html",
+      "/proyectos/web-scraping-auditoria/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/proyectos/deteccion-objetos-jetson-yolo/index.html",
+      "/proyectos/robotica-arduino/index.html",
+      "/proyectos/costo-efectividad-farmacogenetica/index.html",
+      "/proyectos/reportes-powerbi-planificacion/index.html",
+      "/proyectos/powerapps-gestion-equipos/index.html",
+      "/proyectos/web-scraping-auditoria/index.html"
+    ]
+  }
+]
