@@ -1,5 +1,82 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Maximiliano Antonio Mena Pinto",
+    "section": "",
+    "text": "Soy Data Scientist con sólida base cuantitativa y formación como Contador Auditor de la Universidad de Chile. Actualmente curso el Magíster en Estadística en la Pontificia Universidad Católica de Chile, donde desarrollo mi tesis de investigación en Redes Neuronales Bayesianas para aplicaciones en Farmacocinética y Farmacodinámica.\nMe desempeño como Senior A de Data Science en KPMG Chile, actuando como nexo estratégico entre la alta dirección y los equipos técnicos para transformar desafíos de negocio en productos de datos escalables y de alto impacto operativo.\nCuento con amplia experiencia en la implementación end-to-end de modelos estadísticos y de machine learning: desde la ingesta y arquitectura de pipelines en SQL/Python, hasta su integración en plataformas de visualización (Power BI) y despliegue productivo."
+  },
+  {
+    "objectID": "about.html#biografía-profesional",
+    "href": "about.html#biografía-profesional",
+    "title": "Maximiliano Antonio Mena Pinto",
+    "section": "",
+    "text": "Soy Data Scientist con sólida base cuantitativa y formación como Contador Auditor de la Universidad de Chile. Actualmente curso el Magíster en Estadística en la Pontificia Universidad Católica de Chile, donde desarrollo mi tesis de investigación en Redes Neuronales Bayesianas para aplicaciones en Farmacocinética y Farmacodinámica.\nMe desempeño como Senior A de Data Science en KPMG Chile, actuando como nexo estratégico entre la alta dirección y los equipos técnicos para transformar desafíos de negocio en productos de datos escalables y de alto impacto operativo.\nCuento con amplia experiencia en la implementación end-to-end de modelos estadísticos y de machine learning: desde la ingesta y arquitectura de pipelines en SQL/Python, hasta su integración en plataformas de visualización (Power BI) y despliegue productivo."
+  },
+  {
+    "objectID": "about.html#áreas-de-especialización",
+    "href": "about.html#áreas-de-especialización",
+    "title": "Maximiliano Antonio Mena Pinto",
+    "section": "Áreas de Especialización",
+    "text": "Áreas de Especialización\n\nModelado Estadístico & Machine Learning: Inferencia causal, modelos jerárquicos/multinivel, detección de anomalías y redes neuronales bayesianas.\nAuditoría Algorítmica y Control: Automatización de pruebas sustantivas, análisis de Ley de Benford y procesamiento documental no estructurado con OCR.\nArquitectura de Datos & BI: Modelado multidimensional, DAX avanzado, pipelines SQL, Power Apps y automatizaciones en Microsoft 365.\nHardware & Edge AI: Experimentación en robótica, microcontroladores Arduino y visión computacional (YOLOv8 en Jetson Orin Nano)."
+  },
+  {
+    "objectID": "about.html#formación-académica",
+    "href": "about.html#formación-académica",
+    "title": "Maximiliano Antonio Mena Pinto",
+    "section": "Formación Académica",
+    "text": "Formación Académica\n\nMagíster en Estadística (En curso, 2025 – 2027)\nPontificia Universidad Católica de Chile\nTesis: Redes Neuronales Bayesianas aplicadas a Farmacocinética/Farmacodinámica.\nDiplomado de Postítulo en Ingeniería de Software (2024)\nUniversidad de Chile · Calificación: 6,4 / 7,0.\nDiplomado en Big Data y Machine Learning (2022)\nPontificia Universidad Católica de Chile · Calificación: 6,9 / 7,0.\nDiplomado en Auditoría a la Ciberseguridad (2021)\nUniversidad de Santiago de Chile · Calificación: 6,4 / 7,0.\nContador Auditor – Licenciado en Contabilidad y Auditoría (2014 – 2020)\nUniversidad de Chile · Aprobado con Distinción (5,0 / 7,0)."
+  },
+  {
+    "objectID": "about.html#reconocimientos",
+    "href": "about.html#reconocimientos",
+    "title": "Maximiliano Antonio Mena Pinto",
+    "section": "Reconocimientos",
+    "text": "Reconocimientos\n\nPremio al Mejor Desempeño de la Temporada (2022) – KPMG Chile.\nPremio al Mejor Desempeño como Practicante (2019) – KPMG Chile.\nPremio al Mejor Compañero (2019) – KPMG Chile."
+  },
+  {
+    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html",
+    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html",
+    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
+    "section": "",
+    "text": "Este proyecto combina robótica móvil e inteligencia artificial en el borde (Edge Computing) mediante la integración de un chasis de vehículo a radio control (RC) con una computadora monoplaca NVIDIA Jetson Orin Nano.\nEl objetivo principal es dotar al vehículo de capacidades de percepción visual autónoma en tiempo real, permitiendo identificar peatones, vehículos, obstáculos y señales de tránsito directamente en el dispositivo (on-device inference), sin depender de conexión a servidores externos o latencias de red."
+  },
+  {
+    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html#resumen-del-proyecto",
+    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html#resumen-del-proyecto",
+    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
+    "section": "",
+    "text": "Este proyecto combina robótica móvil e inteligencia artificial en el borde (Edge Computing) mediante la integración de un chasis de vehículo a radio control (RC) con una computadora monoplaca NVIDIA Jetson Orin Nano.\nEl objetivo principal es dotar al vehículo de capacidades de percepción visual autónoma en tiempo real, permitiendo identificar peatones, vehículos, obstáculos y señales de tránsito directamente en el dispositivo (on-device inference), sin depender de conexión a servidores externos o latencias de red."
+  },
+  {
+    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html#arquitectura-del-sistema",
+    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html#arquitectura-del-sistema",
+    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
+    "section": "Arquitectura del Sistema",
+    "text": "Arquitectura del Sistema\nEl sistema se estructura en tres capas principales:\n\n1. Percepción Visual (Edge AI)\n\nCaptura: Sensor de cámara gran angular de alta velocidad (CSI/USB).\nModelo: Arquitectura YOLOv8n (nano), seleccionada por su óptimo balance entre precisión (mAP) y costo computacional.\nAceleración: Conversión del modelo a formato ONNX y optimización con el motor NVIDIA TensorRT para aprovechar los núcleos Tensor y la arquitectura Ampere de la Jetson Orin Nano, logrando una tasa de inferencia superior a 30 FPS en resolución HD.\n\n\n\n2. Procesamiento y Lógica de Decisión (Python)\n\nFiltrado de detecciones por umbrales de confianza (confidence threshold) y supresión de no máximos (NMS).\nEstimación de proximidad y posición espacial relativa de los obstáculos detectados respecto al campo de visión del vehículo.\nMáquina de estados para maniobras evasivas o seguimiento de trayectorias.\n\n\n\n3. Actuación y Control de Hardware\n\nInterconexión entre la Jetson y el controlador de motores (ESC / Servomotores) para la modulación de aceleración y dirección.\nMonitoreo de telemetría y estado de la batería mediante protocolo serial/I2C."
+  },
+  {
+    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html#flujo-de-inferencia-en-tiempo-real",
+    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html#flujo-de-inferencia-en-tiempo-real",
+    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
+    "section": "Flujo de Inferencia en Tiempo Real",
+    "text": "Flujo de Inferencia en Tiempo Real\n[ Sensor de Cámara ] \n        │ (Frame a 60fps)\n        ▼\n[ Preprocesamiento en OpenCV (Resize / BGR to RGB / Normalización) ]\n        │\n        ▼\n[ Motor de Inferencia TensorRT / YOLOv8n (FP16) ]\n        │ (Bounding Boxes, Clases, Confianza)\n        ▼\n[ Lógica de Navegación & Control de Dirección ]\n        │ (Señales PWM)\n        ▼\n[ Servos de Dirección & Motores de Tracción ]"
+  },
+  {
+    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html#stack-tecnológico",
+    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html#stack-tecnológico",
+    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
+    "section": "Stack Tecnológico",
+    "text": "Stack Tecnológico\n\nHardware: NVIDIA Jetson Orin Nano (8GB), Chasis RC proporcional, Cámara Gran Angular.\nLenguaje: Python 3.10+\nLibrerías de Visión & ML: PyTorch, Ultralytics YOLOv8, OpenCV, CUDA, cuDNN, TensorRT.\nProtocolos: I2C, UART Serial, PWM."
+  },
+  {
+    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html#próximos-pasos-y-extensiones",
+    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html#próximos-pasos-y-extensiones",
+    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
+    "section": "Próximos Pasos y Extensiones",
+    "text": "Próximos Pasos y Extensiones\n\nIncorporación de odometría visual (VIO) y LiDAR 2D para mapeo y localización simultánea (SLAM).\nEntrenamiento de un modelo personalizado (fine-tuning) con clases específicas de entorno urbano a escala.\nImplementación de navegación basada en ROS 2 (Robot Operating System).\n\n(Espacio reservado para agregar fotografías y videos demostrativos del vehículo en funcionamiento)."
+  },
+  {
     "objectID": "proyectos/web-scraping-auditoria/index.html",
     "href": "proyectos/web-scraping-auditoria/index.html",
     "title": "Automatización de Pruebas de Auditoría con Python y Flask",
@@ -35,48 +112,6 @@
     "text": "Tecnologías Utilizadas\n\nLenguaje: Python 3\nFramework Web: Flask (Jinja2, HTML5, CSS3)\nWeb Scraping: Requests, BeautifulSoup\nProcesamiento de Datos: Pandas, OpenPyXL\nDespliegue: Entorno local / Red corporativa"
   },
   {
-    "objectID": "proyectos/reportes-powerbi-planificacion/index.html",
-    "href": "proyectos/reportes-powerbi-planificacion/index.html",
-    "title": "Reportes Inteligentes de Planificación y People Analytics en Power BI",
-    "section": "",
-    "text": "Este desarrollo en Microsoft Power BI provee una suite analítica diseñada para transformar la gestión estratégica de recursos humanos y planificación operativa. Mediante modelado avanzado de datos (DAX y Power Query) y visualizaciones dinámicas, los líderes de área obtienen visibilidad 360° sobre la utilización de personal, horas facturables, licencias y proyecciones de demanda.\n\n\n\nDashboard de Control de Planificación y Rendimiento en Power BI"
-  },
-  {
-    "objectID": "proyectos/reportes-powerbi-planificacion/index.html#resumen-del-proyecto",
-    "href": "proyectos/reportes-powerbi-planificacion/index.html#resumen-del-proyecto",
-    "title": "Reportes Inteligentes de Planificación y People Analytics en Power BI",
-    "section": "",
-    "text": "Este desarrollo en Microsoft Power BI provee una suite analítica diseñada para transformar la gestión estratégica de recursos humanos y planificación operativa. Mediante modelado avanzado de datos (DAX y Power Query) y visualizaciones dinámicas, los líderes de área obtienen visibilidad 360° sobre la utilización de personal, horas facturables, licencias y proyecciones de demanda.\n\n\n\nDashboard de Control de Planificación y Rendimiento en Power BI"
-  },
-  {
-    "objectID": "proyectos/reportes-powerbi-planificacion/index.html#objetivos-del-proyecto",
-    "href": "proyectos/reportes-powerbi-planificacion/index.html#objetivos-del-proyecto",
-    "title": "Reportes Inteligentes de Planificación y People Analytics en Power BI",
-    "section": "Objetivos del Proyecto",
-    "text": "Objetivos del Proyecto\n\nVisibilidad Ejecutiva: Centralizar información dispersa de planillas, ERP y herramientas de tareas en un único punto de verdad analítico.\nDetección Preventiva de Sobrecarga: Identificar colaboradores en riesgo de burnout o subutilización mediante métricas de tasa de ocupación histórica y proyectada.\nOptimización Presupuestaria: Contrastar en tiempo real el gasto real de horas vs. el presupuesto asignado por proyecto."
-  },
-  {
-    "objectID": "proyectos/reportes-powerbi-planificacion/index.html#características-principales",
-    "href": "proyectos/reportes-powerbi-planificacion/index.html#características-principales",
-    "title": "Reportes Inteligentes de Planificación y People Analytics en Power BI",
-    "section": "Características Principales",
-    "text": "Características Principales\n\n1. Dashboard de Disponibilidad y Rendimiento\nVista interactiva que desglosa la capacidad disponible por equipo, rango de fechas y proyectos activos. Permite drill-down por área, supervisor y colaborador.\n\n\n2. Gestión de Ausentismo y Planificación de Vacaciones\nMonitoreo continuo de licencias médicas, días compensatorios y vacaciones planificadas, integrando reglas de negocio para calcular el impacto directo en la capacidad productiva mensual.\n\n\n3. Analítica Predictiva y Proyección de Demanda\nAprovechando datos históricos de demanda y estacionalidad, el reporte genera escenarios proyectados para anticipar contrataciones temporales o reasignación entre líneas de servicio.\n\n\n\nAnálisis Predictivo y Simulación de Capacidades"
-  },
-  {
-    "objectID": "proyectos/reportes-powerbi-planificacion/index.html#tecnologías-y-metodología",
-    "href": "proyectos/reportes-powerbi-planificacion/index.html#tecnologías-y-metodología",
-    "title": "Reportes Inteligentes de Planificación y People Analytics en Power BI",
-    "section": "Tecnologías y Metodología",
-    "text": "Tecnologías y Metodología\n\nPlataforma: Power BI Service & Power BI Desktop\nModelado: DAX avanzado, Power Query (M), Modelo Estrella\nFuentes de Datos: SQL Server, Microsoft Planner, Excel/SharePoint\nGobernanza: Roles de seguridad a nivel de fila (RLS) y actualización programada"
-  },
-  {
-    "objectID": "proyectos/index.html",
-    "href": "proyectos/index.html",
-    "title": "Proyectos y Publicaciones",
-    "section": "",
-    "text": "Aquí encontrarás una selección de desarrollos, investigaciones científicas y soluciones tecnológicas que combinan el rigor cuantitativo, la auditoría y la analítica avanzada.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nVehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)\n\n3 min\n\n\nEdge AI\n\nComputer Vision\n\nYOLOv8\n\nJetson Orin Nano\n\nPython\n\nRobótica\n\nPyTorch\n\n\n\nImplementación de visión artificial y Edge AI en un vehículo a radio control utilizando NVIDIA Jetson Orin Nano y el modelo YOLOv8n optimizado para navegación y detección de…\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrototipado de Sistemas Embebidos y Robótica con Arduino\n\n2 min\n\n\nArduino\n\nC++\n\nIoT\n\nElectrónica\n\nHardware\n\nSensores\n\n\n\nDesarrollo de dispositivos IoT y prototipos electrónicos: estaciones meteorológicas con sensores LM35 y display OLED, servomotores PWM y controladores DC.\n\n\n\nSep 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nCosto-Efectividad de Terapias Farmacogenéticas usando Cadenas de Markov\n\n2 min\n\n\nEstadística\n\nCadenas de Markov\n\nFarmacogenética\n\nModelado Estocástico\n\nInvestigación\n\nSalud Pública\n\n\n\nModelado estocástico y simulación económica en salud para evaluar la viabilidad de terapias guiadas por genotipo en pacientes con fibrilación auricular en Chile.\n\n\n\nAug 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nReportes Inteligentes de Planificación y People Analytics en Power BI\n\n2 min\n\n\nPower BI\n\nPeople Analytics\n\nBusiness Intelligence\n\nPlanificación\n\nDAX\n\nSQL\n\n\n\nSistema analítico integral en Power BI para el control presupuestario, capacidad de equipos, ausentismo y proyecciones de staffing con analítica predictiva.\n\n\n\nJul 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoreo y Gestión de Equipos de Trabajo con PowerApps\n\n2 min\n\n\nPower Apps\n\nPower Automate\n\nSharePoint\n\nGestión de Operaciones\n\nMicrosoft 365\n\n\n\nAplicación corporativa para el seguimiento en tiempo real de asignación de tareas, disponibilidad de recursos y métricas de desempeño de equipos multidisciplinarios.\n\n\n\nJun 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nAutomatización de Pruebas de Auditoría con Python y Flask\n\n2 min\n\n\nPython\n\nFlask\n\nWeb Scraping\n\nAuditoría\n\nAutomatización\n\nExcel\n\n\n\nHerramienta de web scraping y aplicativo web para la extracción automatizada de valores cuota desde la CMF y generación de papeles de trabajo en Excel.\n\n\n\nMay 15, 2024\n\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "proyectos/costo-efectividad-farmacogenetica/index.html",
     "href": "proyectos/costo-efectividad-farmacogenetica/index.html",
     "title": "Costo-Efectividad de Terapias Farmacogenéticas usando Cadenas de Markov",
@@ -110,6 +145,41 @@
     "title": "Costo-Efectividad de Terapias Farmacogenéticas usando Cadenas de Markov",
     "section": "Impacto y Conclusiones",
     "text": "Impacto y Conclusiones\nLos resultados demuestran que la inversión inicial en genotipificación se amortiza rápidamente gracias a la reducción sustancial de complicaciones graves y rehospitalizaciones, sustentando la viabilidad económica de la medicina de precisión en el contexto latinoamericano."
+  },
+  {
+    "objectID": "proyectos/robotica-arduino/index.html",
+    "href": "proyectos/robotica-arduino/index.html",
+    "title": "Prototipado de Sistemas Embebidos y Robótica con Arduino",
+    "section": "",
+    "text": "Este espacio recopila prototipos y proyectos de exploración en el ámbito de sistemas embebidos, robótica y electrónica con Arduino. La experimentación con microcontroladores ha permitido profundizar en la interacción directa entre software y hardware, adquisición de señales analógicas/digitales y protocolos de comunicación (I2C, SPI, UART).\n\n\n\nPrototipo de medición sensorial con sensor LM35 y pantalla OLED SSD1306"
+  },
+  {
+    "objectID": "proyectos/robotica-arduino/index.html#resumen-del-proyecto",
+    "href": "proyectos/robotica-arduino/index.html#resumen-del-proyecto",
+    "title": "Prototipado de Sistemas Embebidos y Robótica con Arduino",
+    "section": "",
+    "text": "Este espacio recopila prototipos y proyectos de exploración en el ámbito de sistemas embebidos, robótica y electrónica con Arduino. La experimentación con microcontroladores ha permitido profundizar en la interacción directa entre software y hardware, adquisición de señales analógicas/digitales y protocolos de comunicación (I2C, SPI, UART).\n\n\n\nPrototipo de medición sensorial con sensor LM35 y pantalla OLED SSD1306"
+  },
+  {
+    "objectID": "proyectos/robotica-arduino/index.html#prototipos-desarrollados",
+    "href": "proyectos/robotica-arduino/index.html#prototipos-desarrollados",
+    "title": "Prototipado de Sistemas Embebidos y Robótica con Arduino",
+    "section": "Prototipos Desarrollados",
+    "text": "Prototipos Desarrollados\n\nEstación de Monitoreo de Temperatura:\n\nAdquisición de señales térmicas mediante sensor analógico LM35 con conversión de voltaje a grados Celsius.\nRenderizado gráfico y numérico en tiempo real en una pantalla OLED monocromática (128x64) vía bus I2C.\n\nControlador Bidireccional de Motores DC:\n\nRegulación de velocidad mediante modulación por ancho de pulsos (PWM) e inversión de giro utilizando puentes H (L298N).\n\nMecanismo Servocontrolado con Señalización Visual:\n\nControl angular de alta precisión de servomotores acoplados a señalización LED con temporizadores no bloqueantes (millis()).\n\nSistema de Detección de Presencia e Intrusión:\n\nDetección de proximidad mediante sensores infrarrojos pasivos (PIR) activando respuestas lumínicas y auditivas."
+  },
+  {
+    "objectID": "proyectos/robotica-arduino/index.html#código-fuente-adquisición-y-visualización-oled",
+    "href": "proyectos/robotica-arduino/index.html#código-fuente-adquisición-y-visualización-oled",
+    "title": "Prototipado de Sistemas Embebidos y Robótica con Arduino",
+    "section": "Código Fuente: Adquisición y Visualización OLED",
+    "text": "Código Fuente: Adquisición y Visualización OLED\nEjemplo de implementación en C++ para lectura analógica con referencia interna estable y renderizado sobre librería Adafruit GFX / SSD1306:\n#define __DEBUG__\n\n#include &lt;SPI.h&gt;\n#include &lt;Wire.h&gt;\n#include &lt;Adafruit_GFX.h&gt;\n#include &lt;Adafruit_SSD1306.h&gt;\n\n// Definiciones de hardware\n#define ANCHO_PANTALLA 128\n#define ALTO_PANTALLA  64\n#define OLED_RESET     -1\n#define DIRECCION_I2C  0x3C\n\nAdafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, OLED_RESET);\n\nconst int pinLM35 = A0;\nfloat tempC = 0.0;\n\nvoid setup() {\n  Serial.begin(9600);\n  \n  // Referencia interna de 1.1V para mayor resolución en el ADC\n  #if defined(__AVR_ATmega328P__)\n  analogReference(INTERNAL);\n  #endif\n\n  if (!display.begin(SSD1306_SWITCHCAPVCC, DIRECCION_I2C)) {\n    Serial.println(F(\"Fallo al inicializar pantalla OLED\"));\n    for(;;);\n  }\n\n  display.clearDisplay();\n  display.setTextColor(SSD1306_WHITE);\n  display.setTextSize(1);\n  display.setCursor(0, 0);\n  display.println(F(\"Inicializando...\"));\n  display.display();\n  delay(1000);\n}\n\nvoid loop() {\n  int lectura = analogRead(pinLM35);\n  // Cálculo de temperatura según referencia de 1.1V (10mV por °C)\n  tempC = (lectura * 110.0) / 1024.0;\n\n  display.clearDisplay();\n  display.setTextSize(1);\n  display.setCursor(0, 5);\n  display.println(F(\"ESTACION TERMICA\"));\n  display.drawLine(0, 16, 128, 16, SSD1306_WHITE);\n\n  display.setTextSize(2);\n  display.setCursor(10, 30);\n  display.print(tempC, 1);\n  display.print((char)247); // Símbolo de grados\n  display.print(F(\"C\"));\n  \n  display.display();\n  delay(1000);\n}"
+  },
+  {
+    "objectID": "proyectos/robotica-arduino/index.html#tecnologías-y-componentes",
+    "href": "proyectos/robotica-arduino/index.html#tecnologías-y-componentes",
+    "title": "Prototipado de Sistemas Embebidos y Robótica con Arduino",
+    "section": "Tecnologías y Componentes",
+    "text": "Tecnologías y Componentes\n\nMicrocontrolador: Arduino Uno / Nano (ATmega328P)\nLenguaje: C / C++ (Arduino Framework)\nDisplays & Sensores: Pantalla OLED SSD1306 (I2C), Sensor de temperatura LM35, Sensor PIR, Servos SG90\nLibrerías: Adafruit_GFX, Adafruit_SSD1306, Wire"
   },
   {
     "objectID": "cv.html",
@@ -175,97 +245,6 @@
     "text": "🏆 Reconocimientos\n\nPremio al Mejor Desempeño de la Temporada — KPMG Chile (2022)\nPremio al Mejor Desempeño como Practicante — KPMG Chile (2019)\nPremio al Mejor Compañero como Practicante — KPMG Chile (2019)"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Maximiliano Antonio Mena Pinto",
-    "section": "",
-    "text": "Soy Data Scientist con sólida base cuantitativa y formación como Contador Auditor de la Universidad de Chile. Actualmente curso el Magíster en Estadística en la Pontificia Universidad Católica de Chile, donde desarrollo mi tesis de investigación en Redes Neuronales Bayesianas para aplicaciones en Farmacocinética y Farmacodinámica.\nMe desempeño como Senior A de Data Science en KPMG Chile, actuando como nexo estratégico entre la alta dirección y los equipos técnicos para transformar desafíos de negocio en productos de datos escalables y de alto impacto operativo.\nCuento con amplia experiencia en la implementación end-to-end de modelos estadísticos y de machine learning: desde la ingesta y arquitectura de pipelines en SQL/Python, hasta su integración en plataformas de visualización (Power BI) y despliegue productivo."
-  },
-  {
-    "objectID": "about.html#biografía-profesional",
-    "href": "about.html#biografía-profesional",
-    "title": "Maximiliano Antonio Mena Pinto",
-    "section": "",
-    "text": "Soy Data Scientist con sólida base cuantitativa y formación como Contador Auditor de la Universidad de Chile. Actualmente curso el Magíster en Estadística en la Pontificia Universidad Católica de Chile, donde desarrollo mi tesis de investigación en Redes Neuronales Bayesianas para aplicaciones en Farmacocinética y Farmacodinámica.\nMe desempeño como Senior A de Data Science en KPMG Chile, actuando como nexo estratégico entre la alta dirección y los equipos técnicos para transformar desafíos de negocio en productos de datos escalables y de alto impacto operativo.\nCuento con amplia experiencia en la implementación end-to-end de modelos estadísticos y de machine learning: desde la ingesta y arquitectura de pipelines en SQL/Python, hasta su integración en plataformas de visualización (Power BI) y despliegue productivo."
-  },
-  {
-    "objectID": "about.html#áreas-de-especialización",
-    "href": "about.html#áreas-de-especialización",
-    "title": "Maximiliano Antonio Mena Pinto",
-    "section": "Áreas de Especialización",
-    "text": "Áreas de Especialización\n\nModelado Estadístico & Machine Learning: Inferencia causal, modelos jerárquicos/multinivel, detección de anomalías y redes neuronales bayesianas.\nAuditoría Algorítmica y Control: Automatización de pruebas sustantivas, análisis de Ley de Benford y procesamiento documental no estructurado con OCR.\nArquitectura de Datos & BI: Modelado multidimensional, DAX avanzado, pipelines SQL, Power Apps y automatizaciones en Microsoft 365.\nHardware & Edge AI: Experimentación en robótica, microcontroladores Arduino y visión computacional (YOLOv8 en Jetson Orin Nano)."
-  },
-  {
-    "objectID": "about.html#formación-académica",
-    "href": "about.html#formación-académica",
-    "title": "Maximiliano Antonio Mena Pinto",
-    "section": "Formación Académica",
-    "text": "Formación Académica\n\nMagíster en Estadística (En curso, 2025 – 2027)\nPontificia Universidad Católica de Chile\nTesis: Redes Neuronales Bayesianas aplicadas a Farmacocinética/Farmacodinámica.\nDiplomado de Postítulo en Ingeniería de Software (2024)\nUniversidad de Chile · Calificación: 6,4 / 7,0.\nDiplomado en Big Data y Machine Learning (2022)\nPontificia Universidad Católica de Chile · Calificación: 6,9 / 7,0.\nDiplomado en Auditoría a la Ciberseguridad (2021)\nUniversidad de Santiago de Chile · Calificación: 6,4 / 7,0.\nContador Auditor – Licenciado en Contabilidad y Auditoría (2014 – 2020)\nUniversidad de Chile · Aprobado con Distinción (5,0 / 7,0)."
-  },
-  {
-    "objectID": "about.html#reconocimientos",
-    "href": "about.html#reconocimientos",
-    "title": "Maximiliano Antonio Mena Pinto",
-    "section": "Reconocimientos",
-    "text": "Reconocimientos\n\nPremio al Mejor Desempeño de la Temporada (2022) – KPMG Chile.\nPremio al Mejor Desempeño como Practicante (2019) – KPMG Chile.\nPremio al Mejor Compañero (2019) – KPMG Chile."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Maximiliano Antonio Mena Pinto",
-    "section": "",
-    "text": "Data Scientist & Contador Auditor\nEstudiante de Magíster en Estadística en la Pontificia Universidad Católica de Chile y Contador Auditor titulado con distinción de la Universidad de Chile. Actualmente me desempeño como Senior A de Data Science en KPMG Chile, especializándome en el diseño, implementación y puesta en producción de modelos predictivos, sistemas de detección de anomalías y automatización de procesos analíticos complejos.\n\n📈 Modelado Estadístico & ML 🤖 Redes Neuronales Bayesianas 🔍 Auditoría Algorítmica & Benford ⚡ Python · R · SQL 📊 Power Platform & BI 🔬 Investigación Biomédica\n\n\n Ver Proyectos  Currículum Vitae  Sobre Mí"
-  },
-  {
-    "objectID": "index.html#proyectos",
-    "href": "index.html#proyectos",
-    "title": "Maximiliano Antonio Mena Pinto",
-    "section": "Proyectos Destacados",
-    "text": "Proyectos Destacados\nUna muestra de mis trabajos más recientes en analítica avanzada, automatización, investigación y sistemas:\n\n\n\n\n\n\n\n\nVehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)\n\n\nImplementación de visión artificial y Edge AI en un vehículo a radio control utilizando NVIDIA Jetson Orin Nano y el modelo YOLOv8n optimizado para navegación y detección de…\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrototipado de Sistemas Embebidos y Robótica con Arduino\n\n\nDesarrollo de dispositivos IoT y prototipos electrónicos: estaciones meteorológicas con sensores LM35 y display OLED, servomotores PWM y controladores DC.\n\n\n\nSep 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nCosto-Efectividad de Terapias Farmacogenéticas usando Cadenas de Markov\n\n\nModelado estocástico y simulación económica en salud para evaluar la viabilidad de terapias guiadas por genotipo en pacientes con fibrilación auricular en Chile.\n\n\n\nAug 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nReportes Inteligentes de Planificación y People Analytics en Power BI\n\n\nSistema analítico integral en Power BI para el control presupuestario, capacidad de equipos, ausentismo y proyecciones de staffing con analítica predictiva.\n\n\n\nJul 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoreo y Gestión de Equipos de Trabajo con PowerApps\n\n\nAplicación corporativa para el seguimiento en tiempo real de asignación de tareas, disponibilidad de recursos y métricas de desempeño de equipos multidisciplinarios.\n\n\n\nJun 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nAutomatización de Pruebas de Auditoría con Python y Flask\n\n\nHerramienta de web scraping y aplicativo web para la extracción automatizada de valores cuota desde la CMF y generación de papeles de trabajo en Excel.\n\n\n\nMay 15, 2024\n\n\n\n\n\n\nNo matching items\n\n\nVer todos los proyectos y publicaciones ➔\n\n\n\n\n🎓 Formación Cuantitativa & Negocio\nMi perfil combina la visión de negocio, control interno y auditoría contable con la solidez matemática de la estadística y el machine learning para resolver problemas operacionales reales.\n\n\n🤝 Conectemos\n¿Interesado en colaborar en iniciativas de datos, modelado estadístico o consultoría técnica?\n- Email: mmena@fen.uchile.cl\n- LinkedIn: linkedin.com/in/maximiliano-mena-pinto/\n- GitHub: github.com/maxmliano"
-  },
-  {
-    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html",
-    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html",
-    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
-    "section": "",
-    "text": "Este proyecto combina robótica móvil e inteligencia artificial en el borde (Edge Computing) mediante la integración de un chasis de vehículo a radio control (RC) con una computadora monoplaca NVIDIA Jetson Orin Nano.\nEl objetivo principal es dotar al vehículo de capacidades de percepción visual autónoma en tiempo real, permitiendo identificar peatones, vehículos, obstáculos y señales de tránsito directamente en el dispositivo (on-device inference), sin depender de conexión a servidores externos o latencias de red."
-  },
-  {
-    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html#resumen-del-proyecto",
-    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html#resumen-del-proyecto",
-    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
-    "section": "",
-    "text": "Este proyecto combina robótica móvil e inteligencia artificial en el borde (Edge Computing) mediante la integración de un chasis de vehículo a radio control (RC) con una computadora monoplaca NVIDIA Jetson Orin Nano.\nEl objetivo principal es dotar al vehículo de capacidades de percepción visual autónoma en tiempo real, permitiendo identificar peatones, vehículos, obstáculos y señales de tránsito directamente en el dispositivo (on-device inference), sin depender de conexión a servidores externos o latencias de red."
-  },
-  {
-    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html#arquitectura-del-sistema",
-    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html#arquitectura-del-sistema",
-    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
-    "section": "Arquitectura del Sistema",
-    "text": "Arquitectura del Sistema\nEl sistema se estructura en tres capas principales:\n\n1. Percepción Visual (Edge AI)\n\nCaptura: Sensor de cámara gran angular de alta velocidad (CSI/USB).\nModelo: Arquitectura YOLOv8n (nano), seleccionada por su óptimo balance entre precisión (mAP) y costo computacional.\nAceleración: Conversión del modelo a formato ONNX y optimización con el motor NVIDIA TensorRT para aprovechar los núcleos Tensor y la arquitectura Ampere de la Jetson Orin Nano, logrando una tasa de inferencia superior a 30 FPS en resolución HD.\n\n\n\n2. Procesamiento y Lógica de Decisión (Python)\n\nFiltrado de detecciones por umbrales de confianza (confidence threshold) y supresión de no máximos (NMS).\nEstimación de proximidad y posición espacial relativa de los obstáculos detectados respecto al campo de visión del vehículo.\nMáquina de estados para maniobras evasivas o seguimiento de trayectorias.\n\n\n\n3. Actuación y Control de Hardware\n\nInterconexión entre la Jetson y el controlador de motores (ESC / Servomotores) para la modulación de aceleración y dirección.\nMonitoreo de telemetría y estado de la batería mediante protocolo serial/I2C."
-  },
-  {
-    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html#flujo-de-inferencia-en-tiempo-real",
-    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html#flujo-de-inferencia-en-tiempo-real",
-    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
-    "section": "Flujo de Inferencia en Tiempo Real",
-    "text": "Flujo de Inferencia en Tiempo Real\n[ Sensor de Cámara ] \n        │ (Frame a 60fps)\n        ▼\n[ Preprocesamiento en OpenCV (Resize / BGR to RGB / Normalización) ]\n        │\n        ▼\n[ Motor de Inferencia TensorRT / YOLOv8n (FP16) ]\n        │ (Bounding Boxes, Clases, Confianza)\n        ▼\n[ Lógica de Navegación & Control de Dirección ]\n        │ (Señales PWM)\n        ▼\n[ Servos de Dirección & Motores de Tracción ]"
-  },
-  {
-    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html#stack-tecnológico",
-    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html#stack-tecnológico",
-    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
-    "section": "Stack Tecnológico",
-    "text": "Stack Tecnológico\n\nHardware: NVIDIA Jetson Orin Nano (8GB), Chasis RC proporcional, Cámara Gran Angular.\nLenguaje: Python 3.10+\nLibrerías de Visión & ML: PyTorch, Ultralytics YOLOv8, OpenCV, CUDA, cuDNN, TensorRT.\nProtocolos: I2C, UART Serial, PWM."
-  },
-  {
-    "objectID": "proyectos/deteccion-objetos-jetson-yolo/index.html#próximos-pasos-y-extensiones",
-    "href": "proyectos/deteccion-objetos-jetson-yolo/index.html#próximos-pasos-y-extensiones",
-    "title": "Vehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)",
-    "section": "Próximos Pasos y Extensiones",
-    "text": "Próximos Pasos y Extensiones\n\nIncorporación de odometría visual (VIO) y LiDAR 2D para mapeo y localización simultánea (SLAM).\nEntrenamiento de un modelo personalizado (fine-tuning) con clases específicas de entorno urbano a escala.\nImplementación de navegación basada en ROS 2 (Robot Operating System).\n\n(Espacio reservado para agregar fotografías y videos demostrativos del vehículo en funcionamiento)."
-  },
-  {
     "objectID": "proyectos/powerapps-gestion-equipos/index.html",
     "href": "proyectos/powerapps-gestion-equipos/index.html",
     "title": "Monitoreo y Gestión de Equipos de Trabajo con PowerApps",
@@ -294,38 +273,59 @@
     "text": "Ecosistema Tecnológico\n\nFrontend: Microsoft PowerApps (Canvas App)\nAutomatización: Microsoft Power Automate\nCapa de Almacenamiento: SharePoint Lists / Microsoft Dataverse\nColaboración: Microsoft Teams & Outlook"
   },
   {
-    "objectID": "proyectos/robotica-arduino/index.html",
-    "href": "proyectos/robotica-arduino/index.html",
-    "title": "Prototipado de Sistemas Embebidos y Robótica con Arduino",
+    "objectID": "proyectos/index.html",
+    "href": "proyectos/index.html",
+    "title": "Proyectos y Publicaciones",
     "section": "",
-    "text": "Este espacio recopila prototipos y proyectos de exploración en el ámbito de sistemas embebidos, robótica y electrónica con Arduino. La experimentación con microcontroladores ha permitido profundizar en la interacción directa entre software y hardware, adquisición de señales analógicas/digitales y protocolos de comunicación (I2C, SPI, UART).\n\n\n\nPrototipo de medición sensorial con sensor LM35 y pantalla OLED SSD1306"
+    "text": "Aquí encontrarás una selección de desarrollos, investigaciones científicas y soluciones tecnológicas que combinan el rigor cuantitativo, la auditoría y la analítica avanzada.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nVehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)\n\n3 min\n\n\nEdge AI\n\nComputer Vision\n\nYOLOv8\n\nJetson Orin Nano\n\nPython\n\nRobótica\n\nPyTorch\n\n\n\nImplementación de visión artificial y Edge AI en un vehículo a radio control utilizando NVIDIA Jetson Orin Nano y el modelo YOLOv8n optimizado para navegación y detección de…\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrototipado de Sistemas Embebidos y Robótica con Arduino\n\n2 min\n\n\nArduino\n\nC++\n\nIoT\n\nElectrónica\n\nHardware\n\nSensores\n\n\n\nDesarrollo de dispositivos IoT y prototipos electrónicos: estaciones meteorológicas con sensores LM35 y display OLED, servomotores PWM y controladores DC.\n\n\n\nSep 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nCosto-Efectividad de Terapias Farmacogenéticas usando Cadenas de Markov\n\n2 min\n\n\nEstadística\n\nCadenas de Markov\n\nFarmacogenética\n\nModelado Estocástico\n\nInvestigación\n\nSalud Pública\n\n\n\nModelado estocástico y simulación económica en salud para evaluar la viabilidad de terapias guiadas por genotipo en pacientes con fibrilación auricular en Chile.\n\n\n\nAug 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nReportes Inteligentes de Planificación y People Analytics en Power BI\n\n2 min\n\n\nPower BI\n\nPeople Analytics\n\nBusiness Intelligence\n\nPlanificación\n\nDAX\n\nSQL\n\n\n\nSistema analítico integral en Power BI para el control presupuestario, capacidad de equipos, ausentismo y proyecciones de staffing con analítica predictiva.\n\n\n\nJul 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoreo y Gestión de Equipos de Trabajo con PowerApps\n\n2 min\n\n\nPower Apps\n\nPower Automate\n\nSharePoint\n\nGestión de Operaciones\n\nMicrosoft 365\n\n\n\nAplicación corporativa para el seguimiento en tiempo real de asignación de tareas, disponibilidad de recursos y métricas de desempeño de equipos multidisciplinarios.\n\n\n\nJun 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nAutomatización de Pruebas de Auditoría con Python y Flask\n\n2 min\n\n\nPython\n\nFlask\n\nWeb Scraping\n\nAuditoría\n\nAutomatización\n\nExcel\n\n\n\nHerramienta de web scraping y aplicativo web para la extracción automatizada de valores cuota desde la CMF y generación de papeles de trabajo en Excel.\n\n\n\nMay 15, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "proyectos/robotica-arduino/index.html#resumen-del-proyecto",
-    "href": "proyectos/robotica-arduino/index.html#resumen-del-proyecto",
-    "title": "Prototipado de Sistemas Embebidos y Robótica con Arduino",
+    "objectID": "proyectos/reportes-powerbi-planificacion/index.html",
+    "href": "proyectos/reportes-powerbi-planificacion/index.html",
+    "title": "Reportes Inteligentes de Planificación y People Analytics en Power BI",
     "section": "",
-    "text": "Este espacio recopila prototipos y proyectos de exploración en el ámbito de sistemas embebidos, robótica y electrónica con Arduino. La experimentación con microcontroladores ha permitido profundizar en la interacción directa entre software y hardware, adquisición de señales analógicas/digitales y protocolos de comunicación (I2C, SPI, UART).\n\n\n\nPrototipo de medición sensorial con sensor LM35 y pantalla OLED SSD1306"
+    "text": "Este desarrollo en Microsoft Power BI provee una suite analítica diseñada para transformar la gestión estratégica de recursos humanos y planificación operativa. Mediante modelado avanzado de datos (DAX y Power Query) y visualizaciones dinámicas, los líderes de área obtienen visibilidad 360° sobre la utilización de personal, horas facturables, licencias y proyecciones de demanda.\n\n\n\nDashboard de Control de Planificación y Rendimiento en Power BI"
   },
   {
-    "objectID": "proyectos/robotica-arduino/index.html#prototipos-desarrollados",
-    "href": "proyectos/robotica-arduino/index.html#prototipos-desarrollados",
-    "title": "Prototipado de Sistemas Embebidos y Robótica con Arduino",
-    "section": "Prototipos Desarrollados",
-    "text": "Prototipos Desarrollados\n\nEstación de Monitoreo de Temperatura:\n\nAdquisición de señales térmicas mediante sensor analógico LM35 con conversión de voltaje a grados Celsius.\nRenderizado gráfico y numérico en tiempo real en una pantalla OLED monocromática (128x64) vía bus I2C.\n\nControlador Bidireccional de Motores DC:\n\nRegulación de velocidad mediante modulación por ancho de pulsos (PWM) e inversión de giro utilizando puentes H (L298N).\n\nMecanismo Servocontrolado con Señalización Visual:\n\nControl angular de alta precisión de servomotores acoplados a señalización LED con temporizadores no bloqueantes (millis()).\n\nSistema de Detección de Presencia e Intrusión:\n\nDetección de proximidad mediante sensores infrarrojos pasivos (PIR) activando respuestas lumínicas y auditivas."
+    "objectID": "proyectos/reportes-powerbi-planificacion/index.html#resumen-del-proyecto",
+    "href": "proyectos/reportes-powerbi-planificacion/index.html#resumen-del-proyecto",
+    "title": "Reportes Inteligentes de Planificación y People Analytics en Power BI",
+    "section": "",
+    "text": "Este desarrollo en Microsoft Power BI provee una suite analítica diseñada para transformar la gestión estratégica de recursos humanos y planificación operativa. Mediante modelado avanzado de datos (DAX y Power Query) y visualizaciones dinámicas, los líderes de área obtienen visibilidad 360° sobre la utilización de personal, horas facturables, licencias y proyecciones de demanda.\n\n\n\nDashboard de Control de Planificación y Rendimiento en Power BI"
   },
   {
-    "objectID": "proyectos/robotica-arduino/index.html#código-fuente-adquisición-y-visualización-oled",
-    "href": "proyectos/robotica-arduino/index.html#código-fuente-adquisición-y-visualización-oled",
-    "title": "Prototipado de Sistemas Embebidos y Robótica con Arduino",
-    "section": "Código Fuente: Adquisición y Visualización OLED",
-    "text": "Código Fuente: Adquisición y Visualización OLED\nEjemplo de implementación en C++ para lectura analógica con referencia interna estable y renderizado sobre librería Adafruit GFX / SSD1306:\n#define __DEBUG__\n\n#include &lt;SPI.h&gt;\n#include &lt;Wire.h&gt;\n#include &lt;Adafruit_GFX.h&gt;\n#include &lt;Adafruit_SSD1306.h&gt;\n\n// Definiciones de hardware\n#define ANCHO_PANTALLA 128\n#define ALTO_PANTALLA  64\n#define OLED_RESET     -1\n#define DIRECCION_I2C  0x3C\n\nAdafruit_SSD1306 display(ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, OLED_RESET);\n\nconst int pinLM35 = A0;\nfloat tempC = 0.0;\n\nvoid setup() {\n  Serial.begin(9600);\n  \n  // Referencia interna de 1.1V para mayor resolución en el ADC\n  #if defined(__AVR_ATmega328P__)\n  analogReference(INTERNAL);\n  #endif\n\n  if (!display.begin(SSD1306_SWITCHCAPVCC, DIRECCION_I2C)) {\n    Serial.println(F(\"Fallo al inicializar pantalla OLED\"));\n    for(;;);\n  }\n\n  display.clearDisplay();\n  display.setTextColor(SSD1306_WHITE);\n  display.setTextSize(1);\n  display.setCursor(0, 0);\n  display.println(F(\"Inicializando...\"));\n  display.display();\n  delay(1000);\n}\n\nvoid loop() {\n  int lectura = analogRead(pinLM35);\n  // Cálculo de temperatura según referencia de 1.1V (10mV por °C)\n  tempC = (lectura * 110.0) / 1024.0;\n\n  display.clearDisplay();\n  display.setTextSize(1);\n  display.setCursor(0, 5);\n  display.println(F(\"ESTACION TERMICA\"));\n  display.drawLine(0, 16, 128, 16, SSD1306_WHITE);\n\n  display.setTextSize(2);\n  display.setCursor(10, 30);\n  display.print(tempC, 1);\n  display.print((char)247); // Símbolo de grados\n  display.print(F(\"C\"));\n  \n  display.display();\n  delay(1000);\n}"
+    "objectID": "proyectos/reportes-powerbi-planificacion/index.html#objetivos-del-proyecto",
+    "href": "proyectos/reportes-powerbi-planificacion/index.html#objetivos-del-proyecto",
+    "title": "Reportes Inteligentes de Planificación y People Analytics en Power BI",
+    "section": "Objetivos del Proyecto",
+    "text": "Objetivos del Proyecto\n\nVisibilidad Ejecutiva: Centralizar información dispersa de planillas, ERP y herramientas de tareas en un único punto de verdad analítico.\nDetección Preventiva de Sobrecarga: Identificar colaboradores en riesgo de burnout o subutilización mediante métricas de tasa de ocupación histórica y proyectada.\nOptimización Presupuestaria: Contrastar en tiempo real el gasto real de horas vs. el presupuesto asignado por proyecto."
   },
   {
-    "objectID": "proyectos/robotica-arduino/index.html#tecnologías-y-componentes",
-    "href": "proyectos/robotica-arduino/index.html#tecnologías-y-componentes",
-    "title": "Prototipado de Sistemas Embebidos y Robótica con Arduino",
-    "section": "Tecnologías y Componentes",
-    "text": "Tecnologías y Componentes\n\nMicrocontrolador: Arduino Uno / Nano (ATmega328P)\nLenguaje: C / C++ (Arduino Framework)\nDisplays & Sensores: Pantalla OLED SSD1306 (I2C), Sensor de temperatura LM35, Sensor PIR, Servos SG90\nLibrerías: Adafruit_GFX, Adafruit_SSD1306, Wire"
+    "objectID": "proyectos/reportes-powerbi-planificacion/index.html#características-principales",
+    "href": "proyectos/reportes-powerbi-planificacion/index.html#características-principales",
+    "title": "Reportes Inteligentes de Planificación y People Analytics en Power BI",
+    "section": "Características Principales",
+    "text": "Características Principales\n\n1. Dashboard de Disponibilidad y Rendimiento\nVista interactiva que desglosa la capacidad disponible por equipo, rango de fechas y proyectos activos. Permite drill-down por área, supervisor y colaborador.\n\n\n2. Gestión de Ausentismo y Planificación de Vacaciones\nMonitoreo continuo de licencias médicas, días compensatorios y vacaciones planificadas, integrando reglas de negocio para calcular el impacto directo en la capacidad productiva mensual.\n\n\n3. Analítica Predictiva y Proyección de Demanda\nAprovechando datos históricos de demanda y estacionalidad, el reporte genera escenarios proyectados para anticipar contrataciones temporales o reasignación entre líneas de servicio.\n\n\n\nAnálisis Predictivo y Simulación de Capacidades"
+  },
+  {
+    "objectID": "proyectos/reportes-powerbi-planificacion/index.html#tecnologías-y-metodología",
+    "href": "proyectos/reportes-powerbi-planificacion/index.html#tecnologías-y-metodología",
+    "title": "Reportes Inteligentes de Planificación y People Analytics en Power BI",
+    "section": "Tecnologías y Metodología",
+    "text": "Tecnologías y Metodología\n\nPlataforma: Power BI Service & Power BI Desktop\nModelado: DAX avanzado, Power Query (M), Modelo Estrella\nFuentes de Datos: SQL Server, Microsoft Planner, Excel/SharePoint\nGobernanza: Roles de seguridad a nivel de fila (RLS) y actualización programada"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Maximiliano Antonio Mena Pinto",
+    "section": "",
+    "text": "Data Scientist & Contador Auditor\nEstudiante de Magíster en Estadística en la Pontificia Universidad Católica de Chile y Contador Auditor titulado con distinción de la Universidad de Chile. Actualmente me desempeño como Senior A de Data Science en KPMG Chile, especializándome en el diseño, implementación y puesta en producción de modelos predictivos, sistemas de detección de anomalías y automatización de procesos analíticos complejos.\n\n📈 Modelado Estadístico & ML 🤖 Redes Neuronales Bayesianas 🔍 Auditoría Algorítmica & Benford ⚡ Python · R · SQL 📊 Power Platform & BI 🔬 Investigación Biomédica\n\n\n Ver Proyectos  Currículum Vitae  Sobre Mí"
+  },
+  {
+    "objectID": "index.html#proyectos",
+    "href": "index.html#proyectos",
+    "title": "Maximiliano Antonio Mena Pinto",
+    "section": "Proyectos Destacados",
+    "text": "Proyectos Destacados\nUna muestra de mis trabajos más recientes en analítica avanzada, automatización, investigación y sistemas:\n\n\n\n\n\n\n\n\nVehículo RC con Sistema de Detección de Objetos en Tiempo Real (YOLOv8n en Jetson Orin Nano)\n\n\nImplementación de visión artificial y Edge AI en un vehículo a radio control utilizando NVIDIA Jetson Orin Nano y el modelo YOLOv8n optimizado para navegación y detección de…\n\n\n\nOct 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nPrototipado de Sistemas Embebidos y Robótica con Arduino\n\n\nDesarrollo de dispositivos IoT y prototipos electrónicos: estaciones meteorológicas con sensores LM35 y display OLED, servomotores PWM y controladores DC.\n\n\n\nSep 5, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nCosto-Efectividad de Terapias Farmacogenéticas usando Cadenas de Markov\n\n\nModelado estocástico y simulación económica en salud para evaluar la viabilidad de terapias guiadas por genotipo en pacientes con fibrilación auricular en Chile.\n\n\n\nAug 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nReportes Inteligentes de Planificación y People Analytics en Power BI\n\n\nSistema analítico integral en Power BI para el control presupuestario, capacidad de equipos, ausentismo y proyecciones de staffing con analítica predictiva.\n\n\n\nJul 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMonitoreo y Gestión de Equipos de Trabajo con PowerApps\n\n\nAplicación corporativa para el seguimiento en tiempo real de asignación de tareas, disponibilidad de recursos y métricas de desempeño de equipos multidisciplinarios.\n\n\n\nJun 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nAutomatización de Pruebas de Auditoría con Python y Flask\n\n\nHerramienta de web scraping y aplicativo web para la extracción automatizada de valores cuota desde la CMF y generación de papeles de trabajo en Excel.\n\n\n\nMay 15, 2024\n\n\n\n\n\n\nNo matching items\n\n\nVer todos los proyectos y publicaciones ➔\n\n\n\n\n🎓 Formación Cuantitativa & Negocio\nMi perfil combina la visión de negocio, control interno y auditoría contable con la solidez matemática de la estadística y el machine learning para resolver problemas operacionales reales.\n\n\n🤝 Conectemos\n¿Interesado en colaborar en iniciativas de datos, modelado estadístico o consultoría técnica?\n- Email: mmena@fen.uchile.cl\n- LinkedIn: linkedin.com/in/maximiliano-mena-pinto/\n- GitHub: github.com/maxmliano"
   }
 ]
