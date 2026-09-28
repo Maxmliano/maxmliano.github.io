@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/posts/ley-de-benford-auditoria-continua/index.html",
+      "/blog/posts/redes-neuronales-bayesianas-pbpk/index.html",
+      "/blog/posts/remodelacion-portafolio-antigravity/index.html"
+    ]
+  },
+  {
     "listing": "/proyectos/index.html",
     "items": [
       "/proyectos/deteccion-objetos-jetson-yolo/index.html",
@@ -13,6 +21,9 @@
   {
     "listing": "/index.html",
     "items": [
+      "/blog/posts/ley-de-benford-auditoria-continua/index.html",
+      "/blog/posts/redes-neuronales-bayesianas-pbpk/index.html",
+      "/blog/posts/remodelacion-portafolio-antigravity/index.html",
       "/proyectos/deteccion-objetos-jetson-yolo/index.html",
       "/proyectos/robotica-arduino/index.html",
       "/proyectos/costo-efectividad-farmacogenetica/index.html",

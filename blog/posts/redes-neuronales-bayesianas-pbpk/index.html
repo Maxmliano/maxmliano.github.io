@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Maximiliano Antonio Mena Pinto">
-<meta name="dcterms.date" content="2024-06-20">
-<meta name="description" content="Aplicación corporativa para el seguimiento en tiempo real de asignación de tareas, disponibilidad de recursos y métricas de desempeño de equipos multidisciplinarios.">
+<meta name="dcterms.date" content="2026-10-05">
+<meta name="description" content="Fundamentos teóricos, cuantificación de incertidumbre epistémica y formulación matemática de inferencia variacional en modelos farmacocinéticos y farmacodinámicos (PK/PD).">
 
-<title>Monitoreo y Gestión de Equipos de Trabajo con PowerApps – Maximiliano Mena Pinto</title>
+<title>Introducción a las Redes Neuronales Bayesianas (BNN) en Modelado Farmacocinético – Maximiliano Mena Pinto</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,31 +29,66 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../assets/img/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-23b7fb441f0177cac005c00e32637b51.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-23b7fb441f0177cac005c00e32637b51.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,8 +118,51 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
-<link rel="stylesheet" href="../../assets/css/styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../assets/css/styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -256,7 +334,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Maximiliano 📈💻🤖</span>
     </a>
   </div>
@@ -267,23 +345,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog/index.html"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../proyectos/index.html"> 
+    <a class="nav-link" href="../../../proyectos/index.html"> 
 <span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> 
+    <a class="nav-link" href="../../../cv.html"> 
 <span class="menu-text">Currículum</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">Sobre Mí</span></a>
   </li>  
 </ul>
@@ -320,15 +398,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#resumen-del-proyecto" id="toc-resumen-del-proyecto" class="nav-link active" data-scroll-target="#resumen-del-proyecto">Resumen del Proyecto</a></li>
-  <li><a href="#funcionalidades-principales" id="toc-funcionalidades-principales" class="nav-link" data-scroll-target="#funcionalidades-principales">Funcionalidades Principales</a>
+  <li><a href="#el-desafío-de-la-incertidumbre-en-farmacocinética" id="toc-el-desafío-de-la-incertidumbre-en-farmacocinética" class="nav-link active" data-scroll-target="#el-desafío-de-la-incertidumbre-en-farmacocinética">1. El Desafío de la Incertidumbre en Farmacocinética</a></li>
+  <li><a href="#formulación-matemática-de-las-bnn" id="toc-formulación-matemática-de-las-bnn" class="nav-link" data-scroll-target="#formulación-matemática-de-las-bnn">2. Formulación Matemática de las BNN</a>
   <ul class="collapse">
-  <li><a href="#asignación-y-seguimiento-diario-de-actividades" id="toc-asignación-y-seguimiento-diario-de-actividades" class="nav-link" data-scroll-target="#asignación-y-seguimiento-diario-de-actividades">1. Asignación y Seguimiento Diario de Actividades</a></li>
-  <li><a href="#tablero-de-control-en-tiempo-real" id="toc-tablero-de-control-en-tiempo-real" class="nav-link" data-scroll-target="#tablero-de-control-en-tiempo-real">2. Tablero de Control en Tiempo Real</a></li>
-  <li><a href="#flujos-de-automatización-con-power-automate" id="toc-flujos-de-automatización-con-power-automate" class="nav-link" data-scroll-target="#flujos-de-automatización-con-power-automate">3. Flujos de Automatización con Power Automate</a></li>
-  <li><a href="#gestión-de-recursos-y-capacidad-staffing" id="toc-gestión-de-recursos-y-capacidad-staffing" class="nav-link" data-scroll-target="#gestión-de-recursos-y-capacidad-staffing">4. Gestión de Recursos y Capacidad (Staffing)</a></li>
+  <li><a href="#el-teorema-de-bayes-sobre-los-parámetros" id="toc-el-teorema-de-bayes-sobre-los-parámetros" class="nav-link" data-scroll-target="#el-teorema-de-bayes-sobre-los-parámetros">El Teorema de Bayes sobre los Parámetros</a></li>
   </ul></li>
-  <li><a href="#ecosistema-tecnológico" id="toc-ecosistema-tecnológico" class="nav-link" data-scroll-target="#ecosistema-tecnológico">Ecosistema Tecnológico</a></li>
+  <li><a href="#inferencia-variacional-bayes-by-backprop" id="toc-inferencia-variacional-bayes-by-backprop" class="nav-link" data-scroll-target="#inferencia-variacional-bayes-by-backprop">3. Inferencia Variacional: Bayes by Backprop</a>
+  <ul class="collapse">
+  <li><a href="#el-truco-de-la-reparametrización" id="toc-el-truco-de-la-reparametrización" class="nav-link" data-scroll-target="#el-truco-de-la-reparametrización">El Truco de la Reparametrización</a></li>
+  </ul></li>
+  <li><a href="#distribución-predictiva-en-modelado-pkpd" id="toc-distribución-predictiva-en-modelado-pkpd" class="nav-link" data-scroll-target="#distribución-predictiva-en-modelado-pkpd">4. Distribución Predictiva en Modelado PK/PD</a></li>
+  <li><a href="#implementación-referencial-en-pytorch" id="toc-implementación-referencial-en-pytorch" class="nav-link" data-scroll-target="#implementación-referencial-en-pytorch">5. Implementación Referencial en PyTorch</a></li>
+  <li><a href="#conclusiones-y-líneas-de-investigación" id="toc-conclusiones-y-líneas-de-investigación" class="nav-link" data-scroll-target="#conclusiones-y-líneas-de-investigación">6. Conclusiones y Líneas de Investigación</a></li>
   </ul>
 </nav>
     </div>
@@ -338,19 +419,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Monitoreo y Gestión de Equipos de Trabajo con PowerApps</h1>
+<h1 class="title">Introducción a las Redes Neuronales Bayesianas (BNN) en Modelado Farmacocinético</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Power Apps</div>
-    <div class="quarto-category">Power Automate</div>
-    <div class="quarto-category">SharePoint</div>
-    <div class="quarto-category">Gestión de Operaciones</div>
-    <div class="quarto-category">Microsoft 365</div>
+    <div class="quarto-category">Estadística Bayesiana</div>
+    <div class="quarto-category">Deep Learning</div>
+    <div class="quarto-category">Farmacocinética</div>
+    <div class="quarto-category">Inferencia Variacional</div>
+    <div class="quarto-category">Machine Learning</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Aplicación corporativa para el seguimiento en tiempo real de asignación de tareas, disponibilidad de recursos y métricas de desempeño de equipos multidisciplinarios.
+    Fundamentos teóricos, cuantificación de incertidumbre epistémica y formulación matemática de inferencia variacional en modelos farmacocinéticos y farmacodinámicos (PK/PD).
   </div>
 </div>
 
@@ -367,7 +448,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 20, 2024</p>
+      <p class="date">October 5, 2026</p>
     </div>
   </div>
   
@@ -379,52 +460,125 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="resumen-del-proyecto" class="level2">
-<h2 class="anchored" data-anchor-id="resumen-del-proyecto">Resumen del Proyecto</h2>
-<p>Esta aplicación desarrollada en <strong>Microsoft PowerApps</strong> tiene como objetivo central optimizar la administración y el flujo de trabajo de equipos operativos y de auditoría, facilitando el seguimiento transparente de tareas, disponibilidad horaria y comunicación interna.</p>
-<p>La solución brinda visibilidad en tiempo real a los líderes de equipo sobre la carga laboral de cada integrante, permitiendo tomar decisiones proactivas basadas en datos para balancear responsabilidades y evitar sobrecargas o cuellos de botella.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="PowerApps1.png" class="project-image img-fluid figure-img"></p>
-<figcaption>Panel Principal y Módulo de Asignación en PowerApps</figcaption>
-</figure>
+<section id="el-desafío-de-la-incertidumbre-en-farmacocinética" class="level2">
+<h2 class="anchored" data-anchor-id="el-desafío-de-la-incertidumbre-en-farmacocinética">1. El Desafío de la Incertidumbre en Farmacocinética</h2>
+<p>En la dosificación farmacológica y el modelado farmacocinético/farmacodinámico (<strong>PK/PD</strong>), una predicción puntual (<span class="math inline">\hat{y}</span>) rara vez es suficiente. Factores como la variabilidad interindividual (genética, edad, peso, función renal y hepática) y la escasez de datos clínicos en fases tempranas introducen dos tipos fundamentales de incertidumbre:</p>
+<ol type="1">
+<li><strong>Incertidumbre Aleatoria (<span class="math inline">\sigma_{\text{aleatoria}}^2</span>):</strong> Ruido inherente en los ensayos clínicos y en las mediciones de concentración plasmática.</li>
+<li><strong>Incertidumbre Epistémica (<span class="math inline">\sigma_{\text{epistémica}}^2</span>):</strong> La falta de conocimiento del modelo en regiones del espacio biológico donde existen pocas observaciones experimentales.</li>
+</ol>
+<p>Las redes neuronales convencionales tratan los pesos como valores escalares fijos (<span class="math inline">\mathbf{w} \in \mathbb{R}^D</span>), tendiendo a estar sobreconfiadas incluso al extrapolar. Las <strong>Redes Neuronales Bayesianas (BNN)</strong> abordan este problema sustituyendo los pesos deterministas por <strong>distribuciones de probabilidad</strong>.</p>
+<hr>
+</section>
+<section id="formulación-matemática-de-las-bnn" class="level2">
+<h2 class="anchored" data-anchor-id="formulación-matemática-de-las-bnn">2. Formulación Matemática de las BNN</h2>
+<section id="el-teorema-de-bayes-sobre-los-parámetros" class="level3">
+<h3 class="anchored" data-anchor-id="el-teorema-de-bayes-sobre-los-parámetros">El Teorema de Bayes sobre los Parámetros</h3>
+<p>Dado un conjunto de datos observados <span class="math inline">\mathcal{D} = \{(\mathbf{x}_i, y_i)\}_{i=1}^N</span>, definimos una distribución a priori sobre los pesos de la red:</p>
+<p><span class="math display">
+\mathbf{w} \sim p(\mathbf{w}) = \mathcal{N}(\mathbf{0}, \sigma_0^2 \mathbf{I})
+</span></p>
+<p>La función de verosimilitud para un modelo de regresión con varianza de ruido <span class="math inline">\sigma^2</span> viene dada por:</p>
+<p><span class="math display">
+p(\mathcal{D} \mid \mathbf{w}) = \prod_{i=1}^N \mathcal{N}\big(y_i \mid f(\mathbf{x}_i; \mathbf{w}), \, \sigma^2\big)
+</span></p>
+<p>Aplicando el <strong>Teorema de Bayes</strong>, la distribución a posteriori de los parámetros es:</p>
+<p><span class="math display">
+p(\mathbf{w} \mid \mathcal{D}) = \frac{p(\mathcal{D} \mid \mathbf{w})\, p(\mathbf{w})}{p(\mathcal{D})} = \frac{p(\mathcal{D} \mid \mathbf{w})\, p(\mathbf{w})}{\int_{\mathbb{R}^D} p(\mathcal{D} \mid \mathbf{w}')\, p(\mathbf{w}')\, d\mathbf{w}'}
+</span></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>La Intratabilidad de la Evidencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La integral en el denominador (la evidencia marginal <span class="math inline">p(\mathcal{D})</span>) integra sobre un espacio de millones de parámetros, haciendo imposible su cómputo analítico directo. Se requiere recurrir a métodos aproximados: <strong>MCMC</strong> (Markov Chain Monte Carlo) o <strong>Inferencia Variacional (VI)</strong>.</p>
+</div>
 </div>
 <hr>
 </section>
-<section id="funcionalidades-principales" class="level2">
-<h2 class="anchored" data-anchor-id="funcionalidades-principales">Funcionalidades Principales</h2>
-<section id="asignación-y-seguimiento-diario-de-actividades" class="level3">
-<h3 class="anchored" data-anchor-id="asignación-y-seguimiento-diario-de-actividades">1. Asignación y Seguimiento Diario de Actividades</h3>
-<p>Permite parametrizar tareas con descripciones claras, plazos límites, criticidad y responsables asignados. Los colaboradores actualizan el avance en estados dinámicos (<em>Pendiente</em>, <em>En Progreso</em>, <em>Bloqueada</em>, <em>Completada</em>), manteniendo alineado a todo el equipo.</p>
 </section>
-<section id="tablero-de-control-en-tiempo-real" class="level3">
-<h3 class="anchored" data-anchor-id="tablero-de-control-en-tiempo-real">2. Tablero de Control en Tiempo Real</h3>
-<p>Un dashboard integrado resume los KPIs operativos clave: - Horas hombre invertidas vs.&nbsp;estimadas. - Porcentaje de cumplimiento de plazos contractuales. - Identificación temprana de retrasos operativos.</p>
-</section>
-<section id="flujos-de-automatización-con-power-automate" class="level3">
-<h3 class="anchored" data-anchor-id="flujos-de-automatización-con-power-automate">3. Flujos de Automatización con Power Automate</h3>
-<p>El sistema genera alertas y recordatorios automáticos por correo o Teams ante vencimientos próximos o cambios de prioridad, reduciendo la necesidad de microgestión manual.</p>
-</section>
-<section id="gestión-de-recursos-y-capacidad-staffing" class="level3">
-<h3 class="anchored" data-anchor-id="gestión-de-recursos-y-capacidad-staffing">4. Gestión de Recursos y Capacidad (Staffing)</h3>
-<p>Los supervisores acceden a un mapa de disponibilidad que previene la sobreasignación de colaboradores y facilita una distribución equitativa de los nuevos requerimientos.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="PowerApps2.png" class="project-image img-fluid figure-img"></p>
-<figcaption>Módulo de Monitoreo y Métricas Operativas</figcaption>
-</figure>
-</div>
+<section id="inferencia-variacional-bayes-by-backprop" class="level2">
+<h2 class="anchored" data-anchor-id="inferencia-variacional-bayes-by-backprop">3. Inferencia Variacional: Bayes by Backprop</h2>
+<p>En la <strong>Inferencia Variacional</strong>, aproximamos la posterior exacta <span class="math inline">p(\mathbf{w} \mid \mathcal{D})</span> mediante una familia de distribuciones manejables <span class="math inline">q(\mathbf{w} \mid \boldsymbol{\theta})</span> parametrizadas por <span class="math inline">\boldsymbol{\theta} = (\boldsymbol{\mu}, \boldsymbol{\rho})</span>, donde cada peso sigue:</p>
+<p><span class="math display">
+w_j \sim \mathcal{N}\big(\mu_j, \, \sigma_j^2\big), \quad \text{con } \sigma_j = \log(1 + e^{\rho_j})
+</span></p>
+<p>El objetivo es minimizar la divergencia de Kullback-Leibler (<strong>KL</strong>) entre la aproximación variacional y la verdadera posterior:</p>
+<p><span class="math display">
+\text{KL}\big(q(\mathbf{w} \mid \boldsymbol{\theta}) \,\|\, p(\mathbf{w} \mid \mathcal{D})\big)
+</span></p>
+<p>Esto equivale a maximizar el <strong>Límite Inferior de la Evidencia (ELBO)</strong>:</p>
+<p><span class="math display">
+\mathcal{F}(\boldsymbol{\theta}, \mathcal{D}) = \underbrace{\mathbb{E}_{q(\mathbf{w} \mid \boldsymbol{\theta})}\big[\log p(\mathcal{D} \mid \mathbf{w})\big]}_{\text{Ajuste a los datos (Reconstrucción)}} \;-\; \underbrace{\text{KL}\big(q(\mathbf{w} \mid \boldsymbol{\theta}) \,\|\, p(\mathbf{w})\big)}_{\text{Regularización hacia la Prior}}
+</span></p>
+<section id="el-truco-de-la-reparametrización" class="level3">
+<h3 class="anchored" data-anchor-id="el-truco-de-la-reparametrización">El Truco de la Reparametrización</h3>
+<p>Para permitir la propagación de gradientes (<em>backpropagation</em>) a través de variables aleatorias, muestreamos de una normal estándar libre de parámetros <span class="math inline">\boldsymbol{\epsilon} \sim \mathcal{N}(\mathbf{0}, \mathbf{I})</span> y construimos:</p>
+<p><span class="math display">
+\mathbf{w} = \boldsymbol{\mu} + \boldsymbol{\sigma} \odot \boldsymbol{\epsilon}
+</span></p>
 <hr>
 </section>
 </section>
-<section id="ecosistema-tecnológico" class="level2">
-<h2 class="anchored" data-anchor-id="ecosistema-tecnológico">Ecosistema Tecnológico</h2>
-<ul>
-<li><strong>Frontend:</strong> Microsoft PowerApps (Canvas App)</li>
-<li><strong>Automatización:</strong> Microsoft Power Automate</li>
-<li><strong>Capa de Almacenamiento:</strong> SharePoint Lists / Microsoft Dataverse</li>
-<li><strong>Colaboración:</strong> Microsoft Teams &amp; Outlook</li>
-</ul>
+<section id="distribución-predictiva-en-modelado-pkpd" class="level2">
+<h2 class="anchored" data-anchor-id="distribución-predictiva-en-modelado-pkpd">4. Distribución Predictiva en Modelado PK/PD</h2>
+<p>Para un nuevo paciente con características farmacogenómicas <span class="math inline">\mathbf{x}^*</span>, la predicción de la curva de concentración en el tiempo se obtiene integrando sobre el ensamble infinito de redes ponderadas por su verosimilitud posterior:</p>
+<p><span class="math display">
+p(y^* \mid \mathbf{x}^*, \mathcal{D}) = \int p(y^* \mid \mathbf{x}^*, \mathbf{w})\, p(\mathbf{w} \mid \mathcal{D})\, d\mathbf{w} \;\approx\; \frac{1}{S} \sum_{s=1}^S p(y^* \mid \mathbf{x}^*, \mathbf{w}^{(s)})
+</span></p>
+<p>donde <span class="math inline">\mathbf{w}^{(s)} \sim q(\mathbf{w} \mid \boldsymbol{\theta}^*)</span> son <span class="math inline">S</span> muestras de Monte Carlo de los pesos.</p>
+<p>La descomposición de la varianza total ilustra la utilidad clínica:</p>
+<p><span class="math display">
+\operatorname{Var}(y^* \mid \mathbf{x}^*, \mathcal{D}) = \underbrace{\frac{1}{S}\sum_{s=1}^S \Big(f(\mathbf{x}^*; \mathbf{w}^{(s)}) - \bar{f}\Big)^2}_{\text{Incertidumbre Epistémica (Inseguridad del modelo)}} \;+\; \underbrace{\sigma^2}_{\text{Incertidumbre Aleatoria}}
+</span></p>
+<hr>
+</section>
+<section id="implementación-referencial-en-pytorch" class="level2">
+<h2 class="anchored" data-anchor-id="implementación-referencial-en-pytorch">5. Implementación Referencial en PyTorch</h2>
+<p>Un bloque básico de una capa lineal bayesiana utilizando el truco de reparametrización se estructura de la siguiente forma:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn <span class="im">as</span> nn</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch.nn.functional <span class="im">as</span> F</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> BayesianLinear(nn.Module):</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Capa lineal con pesos probabilísticos (Bayes by Backprop)"""</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, in_features, out_features):</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>()</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.in_features <span class="op">=</span> in_features</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.out_features <span class="op">=</span> out_features</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Parámetros variacionales de la media (mu)</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.weight_mu <span class="op">=</span> nn.Parameter(torch.Tensor(out_features, in_features).normal_(<span class="dv">0</span>, <span class="fl">0.1</span>))</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.bias_mu <span class="op">=</span> nn.Parameter(torch.Tensor(out_features).zero_())</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Parámetros variacionales de la desviación estándar (rho)</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.weight_rho <span class="op">=</span> nn.Parameter(torch.Tensor(out_features, in_features).fill_(<span class="op">-</span><span class="dv">3</span>))</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.bias_rho <span class="op">=</span> nn.Parameter(torch.Tensor(out_features).fill_(<span class="op">-</span><span class="dv">3</span>))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, x):</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Desviación estándar positiva garantizada por softplus</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        weight_sigma <span class="op">=</span> torch.log1p(torch.exp(<span class="va">self</span>.weight_rho))</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        bias_sigma <span class="op">=</span> torch.log1p(torch.exp(<span class="va">self</span>.bias_rho))</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Reparameterization Trick: epsilon ~ N(0, I)</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        eps_w <span class="op">=</span> torch.randn_like(weight_sigma)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>        eps_b <span class="op">=</span> torch.randn_like(bias_sigma)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>        weight <span class="op">=</span> <span class="va">self</span>.weight_mu <span class="op">+</span> weight_sigma <span class="op">*</span> eps_w</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>        bias <span class="op">=</span> <span class="va">self</span>.bias_mu <span class="op">+</span> bias_sigma <span class="op">*</span> eps_b</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> F.linear(x, weight, bias)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="conclusiones-y-líneas-de-investigación" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones-y-líneas-de-investigación">6. Conclusiones y Líneas de Investigación</h2>
+<p>La combinación de <strong>modelos mecanísticos basados en fisiología (PBPK)</strong> con <strong>redes neuronales bayesianas</strong> permite salvar la brecha entre el conocimiento biológico a priori y la flexibilidad de aproximación universal del Deep Learning, salvaguardando la toma de decisiones médicas mediante intervalos de credibilidad rigurosos.</p>
+<p><em>(En futuras entregas profundizaremos en el acoplamiento de BNNs con Ecuaciones Diferenciales Ordinarias Neuronales - Neural ODEs).</em></p>
 
 
 </section>
@@ -861,5 +1015,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

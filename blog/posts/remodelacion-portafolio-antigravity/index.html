@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Maximiliano Antonio Mena Pinto">
-<meta name="dcterms.date" content="2024-06-20">
-<meta name="description" content="Aplicación corporativa para el seguimiento en tiempo real de asignación de tareas, disponibilidad de recursos y métricas de desempeño de equipos multidisciplinarios.">
+<meta name="dcterms.date" content="2026-09-28">
+<meta name="description" content="Cómo migré una web estática en HTML/CSS tradicional a un ecosistema moderno en Quarto, aprovechando las capacidades agénticas de Antigravity en VS Code para automatizar refactorizaciones, estilos responsivos y despliegue con GitHub Actions.">
 
-<title>Monitoreo y Gestión de Equipos de Trabajo con PowerApps – Maximiliano Mena Pinto</title>
+<title>Remodelé mi Portafolio y Blog usando Antigravity en VS Code – Maximiliano Mena Pinto</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,31 +29,66 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../assets/img/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-23b7fb441f0177cac005c00e32637b51.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-23b7fb441f0177cac005c00e32637b51.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../../assets/css/styles.css">
+<link rel="stylesheet" href="../../../assets/css/styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -256,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Maximiliano 📈💻🤖</span>
     </a>
   </div>
@@ -267,23 +302,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog/index.html"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../proyectos/index.html"> 
+    <a class="nav-link" href="../../../proyectos/index.html"> 
 <span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> 
+    <a class="nav-link" href="../../../cv.html"> 
 <span class="menu-text">Currículum</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">Sobre Mí</span></a>
   </li>  
 </ul>
@@ -320,15 +355,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#resumen-del-proyecto" id="toc-resumen-del-proyecto" class="nav-link active" data-scroll-target="#resumen-del-proyecto">Resumen del Proyecto</a></li>
-  <li><a href="#funcionalidades-principales" id="toc-funcionalidades-principales" class="nav-link" data-scroll-target="#funcionalidades-principales">Funcionalidades Principales</a>
+  <li><a href="#el-punto-de-partida" id="toc-el-punto-de-partida" class="nav-link active" data-scroll-target="#el-punto-de-partida">1. El Punto de Partida</a></li>
+  <li><a href="#por-qué-quarto" id="toc-por-qué-quarto" class="nav-link" data-scroll-target="#por-qué-quarto">2. ¿Por qué Quarto?</a></li>
+  <li><a href="#el-flujo-de-trabajo-agéntico-con-antigravity" id="toc-el-flujo-de-trabajo-agéntico-con-antigravity" class="nav-link" data-scroll-target="#el-flujo-de-trabajo-agéntico-con-antigravity">3. El Flujo de Trabajo Agéntico con Antigravity</a>
   <ul class="collapse">
-  <li><a href="#asignación-y-seguimiento-diario-de-actividades" id="toc-asignación-y-seguimiento-diario-de-actividades" class="nav-link" data-scroll-target="#asignación-y-seguimiento-diario-de-actividades">1. Asignación y Seguimiento Diario de Actividades</a></li>
-  <li><a href="#tablero-de-control-en-tiempo-real" id="toc-tablero-de-control-en-tiempo-real" class="nav-link" data-scroll-target="#tablero-de-control-en-tiempo-real">2. Tablero de Control en Tiempo Real</a></li>
-  <li><a href="#flujos-de-automatización-con-power-automate" id="toc-flujos-de-automatización-con-power-automate" class="nav-link" data-scroll-target="#flujos-de-automatización-con-power-automate">3. Flujos de Automatización con Power Automate</a></li>
-  <li><a href="#gestión-de-recursos-y-capacidad-staffing" id="toc-gestión-de-recursos-y-capacidad-staffing" class="nav-link" data-scroll-target="#gestión-de-recursos-y-capacidad-staffing">4. Gestión de Recursos y Capacidad (Staffing)</a></li>
+  <li><a href="#a.-diagnóstico-e-instalación-del-entorno" id="toc-a.-diagnóstico-e-instalación-del-entorno" class="nav-link" data-scroll-target="#a.-diagnóstico-e-instalación-del-entorno">A. Diagnóstico e Instalación del Entorno</a></li>
+  <li><a href="#b.-modularización-y-limpieza-de-proyectos" id="toc-b.-modularización-y-limpieza-de-proyectos" class="nav-link" data-scroll-target="#b.-modularización-y-limpieza-de-proyectos">B. Modularización y Limpieza de Proyectos</a></li>
+  <li><a href="#c.-iteración-visual-y-resolución-de-conflictos-web" id="toc-c.-iteración-visual-y-resolución-de-conflictos-web" class="nav-link" data-scroll-target="#c.-iteración-visual-y-resolución-de-conflictos-web">C. Iteración Visual y Resolución de Conflictos Web</a></li>
   </ul></li>
-  <li><a href="#ecosistema-tecnológico" id="toc-ecosistema-tecnológico" class="nav-link" data-scroll-target="#ecosistema-tecnológico">Ecosistema Tecnológico</a></li>
+  <li><a href="#pipeline-de-automatización-con-github-actions" id="toc-pipeline-de-automatización-con-github-actions" class="nav-link" data-scroll-target="#pipeline-de-automatización-con-github-actions">4. Pipeline de Automatización con GitHub Actions</a></li>
+  <li><a href="#conclusiones-y-próximos-pasos" id="toc-conclusiones-y-próximos-pasos" class="nav-link" data-scroll-target="#conclusiones-y-próximos-pasos">5. Conclusiones y Próximos Pasos</a></li>
   </ul>
 </nav>
     </div>
@@ -338,19 +374,20 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Monitoreo y Gestión de Equipos de Trabajo con PowerApps</h1>
+<h1 class="title">Remodelé mi Portafolio y Blog usando Antigravity en VS Code</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Power Apps</div>
-    <div class="quarto-category">Power Automate</div>
-    <div class="quarto-category">SharePoint</div>
-    <div class="quarto-category">Gestión de Operaciones</div>
-    <div class="quarto-category">Microsoft 365</div>
+    <div class="quarto-category">Antigravity</div>
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">Quarto</div>
+    <div class="quarto-category">GitHub Actions</div>
+    <div class="quarto-category">Web Development</div>
+    <div class="quarto-category">Productividad</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Aplicación corporativa para el seguimiento en tiempo real de asignación de tareas, disponibilidad de recursos y métricas de desempeño de equipos multidisciplinarios.
+    Cómo migré una web estática en HTML/CSS tradicional a un ecosistema moderno en Quarto, aprovechando las capacidades agénticas de Antigravity en VS Code para automatizar refactorizaciones, estilos responsivos y despliegue con GitHub Actions.
   </div>
 </div>
 
@@ -367,7 +404,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 20, 2024</p>
+      <p class="date">September 28, 2026</p>
     </div>
   </div>
   
@@ -379,52 +416,100 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="resumen-del-proyecto" class="level2">
-<h2 class="anchored" data-anchor-id="resumen-del-proyecto">Resumen del Proyecto</h2>
-<p>Esta aplicación desarrollada en <strong>Microsoft PowerApps</strong> tiene como objetivo central optimizar la administración y el flujo de trabajo de equipos operativos y de auditoría, facilitando el seguimiento transparente de tareas, disponibilidad horaria y comunicación interna.</p>
-<p>La solución brinda visibilidad en tiempo real a los líderes de equipo sobre la carga laboral de cada integrante, permitiendo tomar decisiones proactivas basadas en datos para balancear responsabilidades y evitar sobrecargas o cuellos de botella.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="PowerApps1.png" class="project-image img-fluid figure-img"></p>
-<figcaption>Panel Principal y Módulo de Asignación en PowerApps</figcaption>
-</figure>
-</div>
+<section id="el-punto-de-partida" class="level2">
+<h2 class="anchored" data-anchor-id="el-punto-de-partida">1. El Punto de Partida</h2>
+<p>Durante bastante tiempo, mi portafolio web consistía en un repositorio tradicional de <strong>GitHub Pages</strong> construido a base de archivos HTML individuales, hojas de estilo CSS creadas a mano y scripts mínimos en JavaScript.</p>
+<p>Si bien cumplía la función básica de mostrar mis proyectos y enlazar mi currículum, mantenerlo presentaba limitaciones claras: - <strong>Falta de modularidad:</strong> Cada página repetía la barra de navegación y el pie de página. Un cambio menor requería editar múltiples archivos. - <strong>Dificultad para escribir artículos técnicos:</strong> Para publicar análisis de datos o fórmulas matemáticas, era necesario insertar etiquetas HTML extensas y configurar bibliotecas externas manualmente. - <strong>Sin soporte nativo para código reproducible:</strong> No existía una integración directa con notebooks (<code>.ipynb</code>) o scripts de Python/R.</p>
+<p>Buscando una solución diseñada para perfiles analíticos y científicos, decidí dar el salto a <strong>Quarto</strong>. Para acelerar la transición de manera integral, utilicé <strong>Antigravity</strong>, el asistente agéntico de desarrollo en VS Code.</p>
 <hr>
 </section>
-<section id="funcionalidades-principales" class="level2">
-<h2 class="anchored" data-anchor-id="funcionalidades-principales">Funcionalidades Principales</h2>
-<section id="asignación-y-seguimiento-diario-de-actividades" class="level3">
-<h3 class="anchored" data-anchor-id="asignación-y-seguimiento-diario-de-actividades">1. Asignación y Seguimiento Diario de Actividades</h3>
-<p>Permite parametrizar tareas con descripciones claras, plazos límites, criticidad y responsables asignados. Los colaboradores actualizan el avance en estados dinámicos (<em>Pendiente</em>, <em>En Progreso</em>, <em>Bloqueada</em>, <em>Completada</em>), manteniendo alineado a todo el equipo.</p>
-</section>
-<section id="tablero-de-control-en-tiempo-real" class="level3">
-<h3 class="anchored" data-anchor-id="tablero-de-control-en-tiempo-real">2. Tablero de Control en Tiempo Real</h3>
-<p>Un dashboard integrado resume los KPIs operativos clave: - Horas hombre invertidas vs.&nbsp;estimadas. - Porcentaje de cumplimiento de plazos contractuales. - Identificación temprana de retrasos operativos.</p>
-</section>
-<section id="flujos-de-automatización-con-power-automate" class="level3">
-<h3 class="anchored" data-anchor-id="flujos-de-automatización-con-power-automate">3. Flujos de Automatización con Power Automate</h3>
-<p>El sistema genera alertas y recordatorios automáticos por correo o Teams ante vencimientos próximos o cambios de prioridad, reduciendo la necesidad de microgestión manual.</p>
-</section>
-<section id="gestión-de-recursos-y-capacidad-staffing" class="level3">
-<h3 class="anchored" data-anchor-id="gestión-de-recursos-y-capacidad-staffing">4. Gestión de Recursos y Capacidad (Staffing)</h3>
-<p>Los supervisores acceden a un mapa de disponibilidad que previene la sobreasignación de colaboradores y facilita una distribución equitativa de los nuevos requerimientos.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="PowerApps2.png" class="project-image img-fluid figure-img"></p>
-<figcaption>Módulo de Monitoreo y Métricas Operativas</figcaption>
-</figure>
+<section id="por-qué-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-quarto">2. ¿Por qué Quarto?</h2>
+<p>Quarto se ha consolidado como el estándar <em>de facto</em> para la comunicación científica y técnica:</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<hr>
-</section>
-</section>
-<section id="ecosistema-tecnológico" class="level2">
-<h2 class="anchored" data-anchor-id="ecosistema-tecnológico">Ecosistema Tecnológico</h2>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Ventajas Clave de Quarto para Data Science
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><strong>Frontend:</strong> Microsoft PowerApps (Canvas App)</li>
-<li><strong>Automatización:</strong> Microsoft Power Automate</li>
-<li><strong>Capa de Almacenamiento:</strong> SharePoint Lists / Microsoft Dataverse</li>
-<li><strong>Colaboración:</strong> Microsoft Teams &amp; Outlook</li>
+<li><strong>Soporte matemático KaTeX / MathJax:</strong> Permite escribir ecuaciones complejas con la misma elegancia que en un paper de investigación.</li>
+<li><strong>Estructura tipo Blog y Catálogos:</strong> Genera automáticamente vistas en cuadrícula (<em>grid</em>), filtros por categorías, barras de búsqueda y tiempo estimado de lectura.</li>
+<li><strong>Modo Claro / Oscuro nativo:</strong> Proporciona alternancia de temas accesible sin necesidad de scripts externos.</li>
+<li><strong>Flujo de despliegue continuo:</strong> Se integra directamente con <strong>GitHub Actions</strong> para compilar y publicar en la nube tras cada <code>git push</code>.</li>
 </ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="el-flujo-de-trabajo-agéntico-con-antigravity" class="level2">
+<h2 class="anchored" data-anchor-id="el-flujo-de-trabajo-agéntico-con-antigravity">3. El Flujo de Trabajo Agéntico con Antigravity</h2>
+<p>A diferencia de un asistente de chat convencional donde solo se copian y pegan fragmentos aislados, <strong>Antigravity</strong> operó como un compañero de programación en pair-programming con acceso directo al espacio de trabajo en VS Code:</p>
+<section id="a.-diagnóstico-e-instalación-del-entorno" class="level3">
+<h3 class="anchored" data-anchor-id="a.-diagnóstico-e-instalación-del-entorno">A. Diagnóstico e Instalación del Entorno</h3>
+<p>En cuestión de segundos, la herramienta verificó el estado de mi máquina (Git, Python 3.12 y la ausencia de Quarto CLI). Ejecutó la instalación de Quarto vía <code>winget</code> en segundo plano y creó una rama de seguridad (<code>feature/quarto-migration</code>) para no alterar el sitio en producción.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instalación automatizada y creación de rama protegida</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">winget</span> install <span class="at">--id</span> Posit.Quarto <span class="at">-e</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feature/quarto-migration</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="b.-modularización-y-limpieza-de-proyectos" class="level3">
+<h3 class="anchored" data-anchor-id="b.-modularización-y-limpieza-de-proyectos">B. Modularización y Limpieza de Proyectos</h3>
+<p>El agente analizó mis archivos HTML existentes y los transformó en artículos limpios en Markdown (<code>.qmd</code>), agrupando cada proyecto en su propio directorio con sus recursos visuales locales:</p>
+<pre class="text"><code>proyectos/
+├── web-scraping-auditoria/       # Extracción de valores cuota en CMF con Flask
+├── powerapps-gestion-equipos/    # Monitoreo operativo con Microsoft Power Platform
+├── reportes-powerbi-planificacion/ # People Analytics y simulación de staffing
+├── costo-efectividad-farmacogenetica/ # Cadenas de Markov y evaluación en salud
+├── deteccion-objetos-jetson-yolo/ # Percepción Edge AI en NVIDIA Jetson Orin Nano
+└── robotica-arduino/             # Adquisición sensorial y pantallas OLED</code></pre>
+</section>
+<section id="c.-iteración-visual-y-resolución-de-conflictos-web" class="level3">
+<h3 class="anchored" data-anchor-id="c.-iteración-visual-y-resolución-de-conflictos-web">C. Iteración Visual y Resolución de Conflictos Web</h3>
+<p>Durante la vista previa local (<code>quarto preview</code>), detectamos juntos detalles visuales: 1. <strong>Viñetas del Hero banner:</strong> Se partían de forma incómoda al saltar de línea; se solucionó con <code>white-space: nowrap</code> y flexbox. 2. <strong>Homologación de botones:</strong> Los botones de llamado a la acción tenían bordes y contrastes dispares; se unificaron bajo un diseño corporativo coherente. 3. <strong>Resolución de rutas relativas:</strong> Corregimos la jerarquía de directorios para evitar colisiones entre rutas de carpetas y archivos en GitHub Pages.</p>
+<hr>
+</section>
+</section>
+<section id="pipeline-de-automatización-con-github-actions" class="level2">
+<h2 class="anchored" data-anchor-id="pipeline-de-automatización-con-github-actions">4. Pipeline de Automatización con GitHub Actions</h2>
+<p>Para asegurar que el blog y el portafolio se actualicen solos al publicar nuevas entradas, dejamos configurado el siguiente flujo en <code>.github/workflows/publish.yml</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Render and Publish Quarto Site</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">permissions</span><span class="kw">:</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> write</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pages</span><span class="kw">:</span><span class="at"> write</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">id-token</span><span class="kw">:</span><span class="at"> write</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">build-and-deploy</span><span class="kw">:</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Checkout repository</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v4</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Setup Quarto</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/setup@v2</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Render and Publish to gh-pages</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> quarto-dev/quarto-actions/publish@v2</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">target</span><span class="kw">:</span><span class="at"> gh-pages</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">GITHUB_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="conclusiones-y-próximos-pasos" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones-y-próximos-pasos">5. Conclusiones y Próximos Pasos</h2>
+<p>La experiencia demostró que utilizar un agente como Antigravity no se limita a autocompletar código: acelera enormemente la toma de decisiones arquitectónicas, la detección temprana de bugs de entorno y la estandarización de buenas prácticas.</p>
+<p>Con esta nueva base, el sitio ahora cuenta con: - Un portafolio de proyectos interactivo. - Un <strong>blog técnico</strong> preparado para divulgar conceptos de estadística, modelado y auditoría continua. - Un currículum dinámico con descarga directa de PDF en español e inglés.</p>
+<p>¡Bienvenidos a este nuevo espacio!</p>
 
 
 </section>
@@ -861,5 +946,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

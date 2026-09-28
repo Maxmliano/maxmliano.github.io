@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Maximiliano Antonio Mena Pinto">
-<meta name="dcterms.date" content="2024-06-20">
-<meta name="description" content="Aplicación corporativa para el seguimiento en tiempo real de asignación de tareas, disponibilidad de recursos y métricas de desempeño de equipos multidisciplinarios.">
+<meta name="dcterms.date" content="2026-10-12">
+<meta name="description" content="Fundamentos matemáticos de la distribución logarítmica de primeros dígitos, pruebas de bondad de ajuste chi-cuadrado y su implementación en pipelines de auditoría algorítmica continua.">
 
-<title>Monitoreo y Gestión de Equipos de Trabajo con PowerApps – Maximiliano Mena Pinto</title>
+<title>Detección de Anomalías Contables mediante la Ley de Benford y Python – Maximiliano Mena Pinto</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,31 +29,66 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../assets/img/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-23b7fb441f0177cac005c00e32637b51.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/img/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-23b7fb441f0177cac005c00e32637b51.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-890df4807d457dbc410f87df85df408d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,8 +118,51 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
-<link rel="stylesheet" href="../../assets/css/styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../assets/css/styles.css">
 </head>
 
 <body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -256,7 +334,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Maximiliano 📈💻🤖</span>
     </a>
   </div>
@@ -267,23 +345,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog/index.html"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../proyectos/index.html"> 
+    <a class="nav-link" href="../../../proyectos/index.html"> 
 <span class="menu-text">Proyectos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> 
+    <a class="nav-link" href="../../../cv.html"> 
 <span class="menu-text">Currículum</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="../../../about.html"> 
 <span class="menu-text">Sobre Mí</span></a>
   </li>  
 </ul>
@@ -320,15 +398,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#resumen-del-proyecto" id="toc-resumen-del-proyecto" class="nav-link active" data-scroll-target="#resumen-del-proyecto">Resumen del Proyecto</a></li>
-  <li><a href="#funcionalidades-principales" id="toc-funcionalidades-principales" class="nav-link" data-scroll-target="#funcionalidades-principales">Funcionalidades Principales</a>
+  <li><a href="#la-ley-del-primer-dígito-en-finanzas" id="toc-la-ley-del-primer-dígito-en-finanzas" class="nav-link active" data-scroll-target="#la-ley-del-primer-dígito-en-finanzas">1. La Ley del Primer Dígito en Finanzas</a></li>
+  <li><a href="#formulación-matemática" id="toc-formulación-matemática" class="nav-link" data-scroll-target="#formulación-matemática">2. Formulación Matemática</a>
   <ul class="collapse">
-  <li><a href="#asignación-y-seguimiento-diario-de-actividades" id="toc-asignación-y-seguimiento-diario-de-actividades" class="nav-link" data-scroll-target="#asignación-y-seguimiento-diario-de-actividades">1. Asignación y Seguimiento Diario de Actividades</a></li>
-  <li><a href="#tablero-de-control-en-tiempo-real" id="toc-tablero-de-control-en-tiempo-real" class="nav-link" data-scroll-target="#tablero-de-control-en-tiempo-real">2. Tablero de Control en Tiempo Real</a></li>
-  <li><a href="#flujos-de-automatización-con-power-automate" id="toc-flujos-de-automatización-con-power-automate" class="nav-link" data-scroll-target="#flujos-de-automatización-con-power-automate">3. Flujos de Automatización con Power Automate</a></li>
-  <li><a href="#gestión-de-recursos-y-capacidad-staffing" id="toc-gestión-de-recursos-y-capacidad-staffing" class="nav-link" data-scroll-target="#gestión-de-recursos-y-capacidad-staffing">4. Gestión de Recursos y Capacidad (Staffing)</a></li>
+  <li><a href="#primer-dígito-significativo" id="toc-primer-dígito-significativo" class="nav-link" data-scroll-target="#primer-dígito-significativo">Primer Dígito Significativo</a></li>
   </ul></li>
-  <li><a href="#ecosistema-tecnológico" id="toc-ecosistema-tecnológico" class="nav-link" data-scroll-target="#ecosistema-tecnológico">Ecosistema Tecnológico</a></li>
+  <li><a href="#pruebas-estadísticas-de-conformidad" id="toc-pruebas-estadísticas-de-conformidad" class="nav-link" data-scroll-target="#pruebas-estadísticas-de-conformidad">3. Pruebas Estadísticas de Conformidad</a>
+  <ul class="collapse">
+  <li><a href="#a.-prueba-chi-cuadrado-chi2" id="toc-a.-prueba-chi-cuadrado-chi2" class="nav-link" data-scroll-target="#a.-prueba-chi-cuadrado-chi2">A. Prueba Chi-Cuadrado (<span class="math inline">\chi^2</span>)</a></li>
+  <li><a href="#b.-desviación-absoluta-media-mad" id="toc-b.-desviación-absoluta-media-mad" class="nav-link" data-scroll-target="#b.-desviación-absoluta-media-mad">B. Desviación Absoluta Media (MAD)</a></li>
+  </ul></li>
+  <li><a href="#implementación-en-python-para-auditoría" id="toc-implementación-en-python-para-auditoría" class="nav-link" data-scroll-target="#implementación-en-python-para-auditoría">4. Implementación en Python para Auditoría</a></li>
+  <li><a href="#dónde-aplicar-y-dónde-no-aplicar" id="toc-dónde-aplicar-y-dónde-no-aplicar" class="nav-link" data-scroll-target="#dónde-aplicar-y-dónde-no-aplicar">5. Dónde Aplicar y Dónde NO Aplicar</a></li>
+  <li><a href="#integración-en-ambientes-de-producción" id="toc-integración-en-ambientes-de-producción" class="nav-link" data-scroll-target="#integración-en-ambientes-de-producción">6. Integración en Ambientes de Producción</a></li>
   </ul>
 </nav>
     </div>
@@ -338,19 +420,19 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Monitoreo y Gestión de Equipos de Trabajo con PowerApps</h1>
+<h1 class="title">Detección de Anomalías Contables mediante la Ley de Benford y Python</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Power Apps</div>
-    <div class="quarto-category">Power Automate</div>
-    <div class="quarto-category">SharePoint</div>
-    <div class="quarto-category">Gestión de Operaciones</div>
-    <div class="quarto-category">Microsoft 365</div>
+    <div class="quarto-category">Auditoría Algorítmica</div>
+    <div class="quarto-category">Ley de Benford</div>
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">Estadística Forense</div>
+    <div class="quarto-category">Control Interno</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Aplicación corporativa para el seguimiento en tiempo real de asignación de tareas, disponibilidad de recursos y métricas de desempeño de equipos multidisciplinarios.
+    Fundamentos matemáticos de la distribución logarítmica de primeros dígitos, pruebas de bondad de ajuste chi-cuadrado y su implementación en pipelines de auditoría algorítmica continua.
   </div>
 </div>
 
@@ -367,7 +449,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 20, 2024</p>
+      <p class="date">October 12, 2026</p>
     </div>
   </div>
   
@@ -379,52 +461,189 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="resumen-del-proyecto" class="level2">
-<h2 class="anchored" data-anchor-id="resumen-del-proyecto">Resumen del Proyecto</h2>
-<p>Esta aplicación desarrollada en <strong>Microsoft PowerApps</strong> tiene como objetivo central optimizar la administración y el flujo de trabajo de equipos operativos y de auditoría, facilitando el seguimiento transparente de tareas, disponibilidad horaria y comunicación interna.</p>
-<p>La solución brinda visibilidad en tiempo real a los líderes de equipo sobre la carga laboral de cada integrante, permitiendo tomar decisiones proactivas basadas en datos para balancear responsabilidades y evitar sobrecargas o cuellos de botella.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="PowerApps1.png" class="project-image img-fluid figure-img"></p>
-<figcaption>Panel Principal y Módulo de Asignación en PowerApps</figcaption>
-</figure>
-</div>
+<section id="la-ley-del-primer-dígito-en-finanzas" class="level2">
+<h2 class="anchored" data-anchor-id="la-ley-del-primer-dígito-en-finanzas">1. La Ley del Primer Dígito en Finanzas</h2>
+<p>En conjuntos de datos que abarcan varios órdenes de magnitud —como libros mayores contables, transacciones de compras, cuentas por pagar o declaraciones de impuestos— los dígitos iniciales no se distribuyen de manera uniforme (<span class="math inline">\approx 11.1\%</span> cada uno).</p>
+<p>En su lugar, siguen la <strong>Ley de Benford</strong> (o ley de los números anómalos), descubierta originalmente por Simon Newcomb en 1881 y redescubierta por Frank Benford en 1938.</p>
+<p>Esta regularidad empírica se ha transformado en un estándar fundamental dentro de la <strong>auditoría forense</strong> y el análisis algorítmico de riesgos, pues los intentos humanos de falsear cifras o generar transacciones ficticias tienden a violar sistemáticamente esta distribución natural.</p>
 <hr>
 </section>
-<section id="funcionalidades-principales" class="level2">
-<h2 class="anchored" data-anchor-id="funcionalidades-principales">Funcionalidades Principales</h2>
-<section id="asignación-y-seguimiento-diario-de-actividades" class="level3">
-<h3 class="anchored" data-anchor-id="asignación-y-seguimiento-diario-de-actividades">1. Asignación y Seguimiento Diario de Actividades</h3>
-<p>Permite parametrizar tareas con descripciones claras, plazos límites, criticidad y responsables asignados. Los colaboradores actualizan el avance en estados dinámicos (<em>Pendiente</em>, <em>En Progreso</em>, <em>Bloqueada</em>, <em>Completada</em>), manteniendo alineado a todo el equipo.</p>
-</section>
-<section id="tablero-de-control-en-tiempo-real" class="level3">
-<h3 class="anchored" data-anchor-id="tablero-de-control-en-tiempo-real">2. Tablero de Control en Tiempo Real</h3>
-<p>Un dashboard integrado resume los KPIs operativos clave: - Horas hombre invertidas vs.&nbsp;estimadas. - Porcentaje de cumplimiento de plazos contractuales. - Identificación temprana de retrasos operativos.</p>
-</section>
-<section id="flujos-de-automatización-con-power-automate" class="level3">
-<h3 class="anchored" data-anchor-id="flujos-de-automatización-con-power-automate">3. Flujos de Automatización con Power Automate</h3>
-<p>El sistema genera alertas y recordatorios automáticos por correo o Teams ante vencimientos próximos o cambios de prioridad, reduciendo la necesidad de microgestión manual.</p>
-</section>
-<section id="gestión-de-recursos-y-capacidad-staffing" class="level3">
-<h3 class="anchored" data-anchor-id="gestión-de-recursos-y-capacidad-staffing">4. Gestión de Recursos y Capacidad (Staffing)</h3>
-<p>Los supervisores acceden a un mapa de disponibilidad que previene la sobreasignación de colaboradores y facilita una distribución equitativa de los nuevos requerimientos.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="PowerApps2.png" class="project-image img-fluid figure-img"></p>
-<figcaption>Módulo de Monitoreo y Métricas Operativas</figcaption>
-</figure>
-</div>
+<section id="formulación-matemática" class="level2">
+<h2 class="anchored" data-anchor-id="formulación-matemática">2. Formulación Matemática</h2>
+<section id="primer-dígito-significativo" class="level3">
+<h3 class="anchored" data-anchor-id="primer-dígito-significativo">Primer Dígito Significativo</h3>
+<p>La probabilidad de que el primer dígito no nulo <span class="math inline">D_1</span> de una cifra tome el valor <span class="math inline">d \in \{1, 2, \dots, 9\}</span> está regida por una distribución logarítmica invariante de escala:</p>
+<p><span class="math display">
+P(D_1 = d) = \log_{10}\left(1 + \frac{1}{d}\right) = \log_{10}\left(\frac{d + 1}{d}\right)
+</span></p>
+<p>De esta formulación se desprenden las frecuencias teóricas esperadas:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Primer Dígito (<span class="math inline">d</span>)</th>
+<th style="text-align: center;">Probabilidad Teórica <span class="math inline">P(D_1 = d)</span></th>
+<th style="text-align: center;">Frecuencia Acumulada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><span class="math inline">30.10\%</span></td>
+<td style="text-align: center;"><span class="math inline">30.1\%</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><span class="math inline">17.61\%</span></td>
+<td style="text-align: center;"><span class="math inline">47.7\%</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><span class="math inline">12.49\%</span></td>
+<td style="text-align: center;"><span class="math inline">60.2\%</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;"><span class="math inline">9.69\%</span></td>
+<td style="text-align: center;"><span class="math inline">69.9\%</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;"><span class="math inline">7.92\%</span></td>
+<td style="text-align: center;"><span class="math inline">77.8\%</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;"><span class="math inline">6.69\%</span></td>
+<td style="text-align: center;"><span class="math inline">84.5\%</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;"><span class="math inline">5.80\%</span></td>
+<td style="text-align: center;"><span class="math inline">90.3\%</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: center;"><span class="math inline">5.12\%</span></td>
+<td style="text-align: center;"><span class="math inline">95.4\%</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;"><span class="math inline">4.58\%</span></td>
+<td style="text-align: center;"><span class="math inline">100.0\%</span></td>
+</tr>
+</tbody>
+</table>
 <hr>
 </section>
 </section>
-<section id="ecosistema-tecnológico" class="level2">
-<h2 class="anchored" data-anchor-id="ecosistema-tecnológico">Ecosistema Tecnológico</h2>
+<section id="pruebas-estadísticas-de-conformidad" class="level2">
+<h2 class="anchored" data-anchor-id="pruebas-estadísticas-de-conformidad">3. Pruebas Estadísticas de Conformidad</h2>
+<p>Para evaluar si una población contable de <span class="math inline">N</span> transacciones se desvía significativamente de la ley esperada, combinamos dos métricas:</p>
+<section id="a.-prueba-chi-cuadrado-chi2" class="level3">
+<h3 class="anchored" data-anchor-id="a.-prueba-chi-cuadrado-chi2">A. Prueba Chi-Cuadrado (<span class="math inline">\chi^2</span>)</h3>
+<p>Contrasta las frecuencias observadas (<span class="math inline">O_d</span>) con las frecuencias esperadas (<span class="math inline">E_d = N \cdot P(D_1 = d)</span>):</p>
+<p><span class="math display">
+\chi^2 = \sum_{d=1}^9 \frac{\big(O_d - E_d\big)^2}{E_d} \;\sim\; \chi^2(8)
+</span></p>
+<p>Bajo la hipótesis nula <span class="math inline">H_0</span> de conformidad, este estadístico se distribuye como una chi-cuadrado con <span class="math inline">9 - 1 = 8</span> grados de libertad. Para un nivel de significancia <span class="math inline">\alpha = 0.05</span>, el valor crítico de rechazo es <span class="math inline">\chi_{0.95}^2(8) = 15.51</span>.</p>
+</section>
+<section id="b.-desviación-absoluta-media-mad" class="level3">
+<h3 class="anchored" data-anchor-id="b.-desviación-absoluta-media-mad">B. Desviación Absoluta Media (MAD)</h3>
+<p>En auditorías con volúmenes masivos de datos (<span class="math inline">N &gt; 100,000</span>), el test de <span class="math inline">\chi^2</span> suele ser hiper-sensible. Se complementa con el estadístico MAD:</p>
+<p><span class="math display">
+\text{MAD} = \frac{1}{9} \sum_{d=1}^9 \big|\,p_{\text{obs}}(d) - P(D_1 = d)\,\big|
+</span></p>
+<p>Según los umbrales de Nigrini (2012): - <span class="math inline">\text{MAD} &lt; 0.006</span>: Conformidad estricta. - <span class="math inline">0.006 \le \text{MAD} &lt; 0.012</span>: Conformidad aceptable. - <span class="math inline">0.012 \le \text{MAD} &lt; 0.015</span>: Inconformidad marginal. - <span class="math inline">\text{MAD} \ge 0.015</span>: No conforme (alerta para auditoría sustantiva profunda).</p>
+<hr>
+</section>
+</section>
+<section id="implementación-en-python-para-auditoría" class="level2">
+<h2 class="anchored" data-anchor-id="implementación-en-python-para-auditoría">4. Implementación en Python para Auditoría</h2>
+<p>El siguiente script en Python permite auditar un libro contable en formato tabular utilizando <code>pandas</code> y <code>scipy</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> chisquare</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> analizar_benford(valores: pd.Series):</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">    Analiza una serie de montos monetarios según la Ley de Benford.</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Filtrar valores positivos y mayores a cero</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    validos <span class="op">=</span> valores[valores <span class="op">&gt;</span> <span class="dv">0</span>].dropna()</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extraer primer dígito significativo</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    primeros_digitos <span class="op">=</span> validos.astype(<span class="bu">str</span>).<span class="bu">str</span>.extract(<span class="vs">r'</span><span class="kw">(</span><span class="pp">[1-9]</span><span class="kw">)</span><span class="vs">'</span>)[<span class="dv">0</span>].astype(<span class="bu">int</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    n <span class="op">=</span> <span class="bu">len</span>(primeros_digitos)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Frecuencias esperadas</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    digitos <span class="op">=</span> np.arange(<span class="dv">1</span>, <span class="dv">10</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    prob_esperada <span class="op">=</span> np.log10(<span class="dv">1</span> <span class="op">+</span> <span class="dv">1</span> <span class="op">/</span> digitos)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    esperados <span class="op">=</span> prob_esperada <span class="op">*</span> n</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Frecuencias observadas</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    conteo <span class="op">=</span> primeros_digitos.value_counts().reindex(digitos, fill_value<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>    observados <span class="op">=</span> conteo.values</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    prob_observada <span class="op">=</span> observados <span class="op">/</span> n</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Test Chi-cuadrado</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    chi2_stat, p_val <span class="op">=</span> chisquare(f_obs<span class="op">=</span>observados, f_exp<span class="op">=</span>esperados)</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    mad <span class="op">=</span> np.mean(np.<span class="bu">abs</span>(prob_observada <span class="op">-</span> prob_esperada))</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pd.DataFrame({</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Dígito"</span>: digitos,</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Observados"</span>: observados,</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Esperados"</span>: np.<span class="bu">round</span>(esperados, <span class="dv">1</span>),</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>        <span class="st">"P_Obs"</span>: prob_observada,</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        <span class="st">"P_Esp"</span>: prob_esperada</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    }), {<span class="st">"Chi2"</span>: chi2_stat, <span class="st">"p-value"</span>: p_val, <span class="st">"MAD"</span>: mad, <span class="st">"Total_Muestras"</span>: n}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="dónde-aplicar-y-dónde-no-aplicar" class="level2">
+<h2 class="anchored" data-anchor-id="dónde-aplicar-y-dónde-no-aplicar">5. Dónde Aplicar y Dónde NO Aplicar</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Cuándo Sí Aplica Benford
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
-<li><strong>Frontend:</strong> Microsoft PowerApps (Canvas App)</li>
-<li><strong>Automatización:</strong> Microsoft Power Automate</li>
-<li><strong>Capa de Almacenamiento:</strong> SharePoint Lists / Microsoft Dataverse</li>
-<li><strong>Colaboración:</strong> Microsoft Teams &amp; Outlook</li>
+<li>Libros mayores y transacciones de gastos operacionales (OPEX).</li>
+<li>Reembolsos de empleados y órdenes de compra.</li>
+<li>Cuentas por cobrar y cuentas por pagar.</li>
 </ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Cuándo NO Aplica Benford
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Cifras con límites regulatorios o techos rígidos (ej. reembolsos con tope fijo de $50.000).</li>
+<li>Identificadores o códigos secuenciales (RUT, números de factura, IDs de cliente).</li>
+<li>Variables con rangos estrechos (ej. estaturas o temperaturas).</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="integración-en-ambientes-de-producción" class="level2">
+<h2 class="anchored" data-anchor-id="integración-en-ambientes-de-producción">6. Integración en Ambientes de Producción</h2>
+<p>En sistemas de auditoría continua, este análisis se programa para ejecutarse de forma desatendida mediante trabajos nocturnos en Python/SQL. Las desviaciones anómalas en cuentas contables específicas disparan alertas tempranas dirigidas a los supervisores de auditoría en plataformas como <strong>Power BI Server</strong> o <strong>Teams</strong>.</p>
 
 
 </section>
@@ -861,5 +1080,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
