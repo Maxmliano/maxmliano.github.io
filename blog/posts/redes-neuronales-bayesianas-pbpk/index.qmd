@@ -1,0 +1,142 @@
+---
+title: "Introducción a las Redes Neuronales Bayesianas (BNN) en Modelado Farmacocinético"
+description: "Fundamentos teóricos, cuantificación de incertidumbre epistémica y formulación matemática de inferencia variacional en modelos farmacocinéticos y farmacodinámicos (PK/PD)."
+author: "Maximiliano Antonio Mena Pinto"
+date: "2026-10-05"
+categories: [Estadística Bayesiana, Deep Learning, Farmacocinética, Inferencia Variacional, Machine Learning]
+toc: true
+---
+
+## 1. El Desafío de la Incertidumbre en Farmacocinética
+
+En la dosificación farmacológica y el modelado farmacocinético/farmacodinámico (**PK/PD**), una predicción puntual ($\hat{y}$) rara vez es suficiente. Factores como la variabilidad interindividual (genética, edad, peso, función renal y hepática) y la escasez de datos clínicos en fases tempranas introducen dos tipos fundamentales de incertidumbre:
+
+1. **Incertidumbre Aleatoria ($\sigma_{\text{aleatoria}}^2$):** Ruido inherente en los ensayos clínicos y en las mediciones de concentración plasmática.
+2. **Incertidumbre Epistémica ($\sigma_{\text{epistémica}}^2$):** La falta de conocimiento del modelo en regiones del espacio biológico donde existen pocas observaciones experimentales.
+
+Las redes neuronales convencionales tratan los pesos como valores escalares fijos ($\mathbf{w} \in \mathbb{R}^D$), tendiendo a estar sobreconfiadas incluso al extrapolar. Las **Redes Neuronales Bayesianas (BNN)** abordan este problema sustituyendo los pesos deterministas por **distribuciones de probabilidad**.
+
+---
+
+## 2. Formulación Matemática de las BNN
+
+### El Teorema de Bayes sobre los Parámetros
+
+Dado un conjunto de datos observados $\mathcal{D} = \{(\mathbf{x}_i, y_i)\}_{i=1}^N$, definimos una distribución a priori sobre los pesos de la red:
+
+$$
+\mathbf{w} \sim p(\mathbf{w}) = \mathcal{N}(\mathbf{0}, \sigma_0^2 \mathbf{I})
+$$
+
+La función de verosimilitud para un modelo de regresión con varianza de ruido $\sigma^2$ viene dada por:
+
+$$
+p(\mathcal{D} \mid \mathbf{w}) = \prod_{i=1}^N \mathcal{N}\big(y_i \mid f(\mathbf{x}_i; \mathbf{w}), \, \sigma^2\big)
+$$
+
+Aplicando el **Teorema de Bayes**, la distribución a posteriori de los parámetros es:
+
+$$
+p(\mathbf{w} \mid \mathcal{D}) = \frac{p(\mathcal{D} \mid \mathbf{w})\, p(\mathbf{w})}{p(\mathcal{D})} = \frac{p(\mathcal{D} \mid \mathbf{w})\, p(\mathbf{w})}{\int_{\mathbb{R}^D} p(\mathcal{D} \mid \mathbf{w}')\, p(\mathbf{w}')\, d\mathbf{w}'}
+$$
+
+::: {.callout-important icon=true}
+### La Intratabilidad de la Evidencia
+La integral en el denominador (la evidencia marginal $p(\mathcal{D})$) integra sobre un espacio de millones de parámetros, haciendo imposible su cómputo analítico directo. Se requiere recurrir a métodos aproximados: **MCMC** (Markov Chain Monte Carlo) o **Inferencia Variacional (VI)**.
+:::
+
+---
+
+## 3. Inferencia Variacional: Bayes by Backprop
+
+En la **Inferencia Variacional**, aproximamos la posterior exacta $p(\mathbf{w} \mid \mathcal{D})$ mediante una familia de distribuciones manejables $q(\mathbf{w} \mid \boldsymbol{\theta})$ parametrizadas por $\boldsymbol{\theta} = (\boldsymbol{\mu}, \boldsymbol{\rho})$, donde cada peso sigue:
+
+$$
+w_j \sim \mathcal{N}\big(\mu_j, \, \sigma_j^2\big), \quad \text{con } \sigma_j = \log(1 + e^{\rho_j})
+$$
+
+El objetivo es minimizar la divergencia de Kullback-Leibler (**KL**) entre la aproximación variacional y la verdadera posterior:
+
+$$
+\text{KL}\big(q(\mathbf{w} \mid \boldsymbol{\theta}) \,\|\, p(\mathbf{w} \mid \mathcal{D})\big)
+$$
+
+Esto equivale a maximizar el **Límite Inferior de la Evidencia (ELBO)**:
+
+$$
+\mathcal{F}(\boldsymbol{\theta}, \mathcal{D}) = \underbrace{\mathbb{E}_{q(\mathbf{w} \mid \boldsymbol{\theta})}\big[\log p(\mathcal{D} \mid \mathbf{w})\big]}_{\text{Ajuste a los datos (Reconstrucción)}} \;-\; \underbrace{\text{KL}\big(q(\mathbf{w} \mid \boldsymbol{\theta}) \,\|\, p(\mathbf{w})\big)}_{\text{Regularización hacia la Prior}}
+$$
+
+### El Truco de la Reparametrización
+Para permitir la propagación de gradientes (*backpropagation*) a través de variables aleatorias, muestreamos de una normal estándar libre de parámetros $\boldsymbol{\epsilon} \sim \mathcal{N}(\mathbf{0}, \mathbf{I})$ y construimos:
+
+$$
+\mathbf{w} = \boldsymbol{\mu} + \boldsymbol{\sigma} \odot \boldsymbol{\epsilon}
+$$
+
+---
+
+## 4. Distribución Predictiva en Modelado PK/PD
+
+Para un nuevo paciente con características farmacogenómicas $\mathbf{x}^*$, la predicción de la curva de concentración en el tiempo se obtiene integrando sobre el ensamble infinito de redes ponderadas por su verosimilitud posterior:
+
+$$
+p(y^* \mid \mathbf{x}^*, \mathcal{D}) = \int p(y^* \mid \mathbf{x}^*, \mathbf{w})\, p(\mathbf{w} \mid \mathcal{D})\, d\mathbf{w} \;\approx\; \frac{1}{S} \sum_{s=1}^S p(y^* \mid \mathbf{x}^*, \mathbf{w}^{(s)})
+$$
+
+donde $\mathbf{w}^{(s)} \sim q(\mathbf{w} \mid \boldsymbol{\theta}^*)$ son $S$ muestras de Monte Carlo de los pesos.
+
+La descomposición de la varianza total ilustra la utilidad clínica:
+
+$$
+\operatorname{Var}(y^* \mid \mathbf{x}^*, \mathcal{D}) = \underbrace{\frac{1}{S}\sum_{s=1}^S \Big(f(\mathbf{x}^*; \mathbf{w}^{(s)}) - \bar{f}\Big)^2}_{\text{Incertidumbre Epistémica (Inseguridad del modelo)}} \;+\; \underbrace{\sigma^2}_{\text{Incertidumbre Aleatoria}}
+$$
+
+---
+
+## 5. Implementación Referencial en PyTorch
+
+Un bloque básico de una capa lineal bayesiana utilizando el truco de reparametrización se estructura de la siguiente forma:
+
+```python
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+class BayesianLinear(nn.Module):
+    """Capa lineal con pesos probabilísticos (Bayes by Backprop)"""
+    def __init__(self, in_features, out_features):
+        super().__init__()
+        self.in_features = in_features
+        self.out_features = out_features
+
+        # Parámetros variacionales de la media (mu)
+        self.weight_mu = nn.Parameter(torch.Tensor(out_features, in_features).normal_(0, 0.1))
+        self.bias_mu = nn.Parameter(torch.Tensor(out_features).zero_())
+
+        # Parámetros variacionales de la desviación estándar (rho)
+        self.weight_rho = nn.Parameter(torch.Tensor(out_features, in_features).fill_(-3))
+        self.bias_rho = nn.Parameter(torch.Tensor(out_features).fill_(-3))
+
+    def forward(self, x):
+        # Desviación estándar positiva garantizada por softplus
+        weight_sigma = torch.log1p(torch.exp(self.weight_rho))
+        bias_sigma = torch.log1p(torch.exp(self.bias_rho))
+
+        # Reparameterization Trick: epsilon ~ N(0, I)
+        eps_w = torch.randn_like(weight_sigma)
+        eps_b = torch.randn_like(bias_sigma)
+
+        weight = self.weight_mu + weight_sigma * eps_w
+        bias = self.bias_mu + bias_sigma * eps_b
+
+        return F.linear(x, weight, bias)
+```
+
+---
+
+## 6. Conclusiones y Líneas de Investigación
+
+La combinación de **modelos mecanísticos basados en fisiología (PBPK)** con **redes neuronales bayesianas** permite salvar la brecha entre el conocimiento biológico a priori y la flexibilidad de aproximación universal del Deep Learning, salvaguardando la toma de decisiones médicas mediante intervalos de credibilidad rigurosos.
+
+*(En futuras entregas profundizaremos en el acoplamiento de BNNs con Ecuaciones Diferenciales Ordinarias Neuronales - Neural ODEs).*

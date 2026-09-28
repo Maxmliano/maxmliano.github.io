@@ -1,0 +1,139 @@
+---
+title: "Detección de Anomalías Contables mediante la Ley de Benford y Python"
+description: "Fundamentos matemáticos de la distribución logarítmica de primeros dígitos, pruebas de bondad de ajuste chi-cuadrado y su implementación en pipelines de auditoría algorítmica continua."
+author: "Maximiliano Antonio Mena Pinto"
+date: "2026-10-12"
+categories: [Auditoría Algorítmica, Ley de Benford, Python, Estadística Forense, Control Interno]
+toc: true
+---
+
+## 1. La Ley del Primer Dígito en Finanzas
+
+En conjuntos de datos que abarcan varios órdenes de magnitud —como libros mayores contables, transacciones de compras, cuentas por pagar o declaraciones de impuestos— los dígitos iniciales no se distribuyen de manera uniforme ($\approx 11.1\%$ cada uno). 
+
+En su lugar, siguen la **Ley de Benford** (o ley de los números anómalos), descubierta originalmente por Simon Newcomb en 1881 y redescubierta por Frank Benford en 1938.
+
+Esta regularidad empírica se ha transformado en un estándar fundamental dentro de la **auditoría forense** y el análisis algorítmico de riesgos, pues los intentos humanos de falsear cifras o generar transacciones ficticias tienden a violar sistemáticamente esta distribución natural.
+
+---
+
+## 2. Formulación Matemática
+
+### Primer Dígito Significativo
+
+La probabilidad de que el primer dígito no nulo $D_1$ de una cifra tome el valor $d \in \{1, 2, \dots, 9\}$ está regida por una distribución logarítmica invariante de escala:
+
+$$
+P(D_1 = d) = \log_{10}\left(1 + \frac{1}{d}\right) = \log_{10}\left(\frac{d + 1}{d}\right)
+$$
+
+De esta formulación se desprenden las frecuencias teóricas esperadas:
+
+| Primer Dígito ($d$) | Probabilidad Teórica $P(D_1 = d)$ | Frecuencia Acumulada |
+| :---: | :---: | :---: |
+| **1** | $30.10\%$ | $30.1\%$ |
+| **2** | $17.61\%$ | $47.7\%$ |
+| **3** | $12.49\%$ | $60.2\%$ |
+| **4** | $9.69\%$ | $69.9\%$ |
+| **5** | $7.92\%$ | $77.8\%$ |
+| **6** | $6.69\%$ | $84.5\%$ |
+| **7** | $5.80\%$ | $90.3\%$ |
+| **8** | $5.12\%$ | $95.4\%$ |
+| **9** | $4.58\%$ | $100.0\%$ |
+
+---
+
+## 3. Pruebas Estadísticas de Conformidad
+
+Para evaluar si una población contable de $N$ transacciones se desvía significativamente de la ley esperada, combinamos dos métricas:
+
+### A. Prueba Chi-Cuadrado ($\chi^2$)
+Contrasta las frecuencias observadas ($O_d$) con las frecuencias esperadas ($E_d = N \cdot P(D_1 = d)$):
+
+$$
+\chi^2 = \sum_{d=1}^9 \frac{\big(O_d - E_d\big)^2}{E_d} \;\sim\; \chi^2(8)
+$$
+
+Bajo la hipótesis nula $H_0$ de conformidad, este estadístico se distribuye como una chi-cuadrado con $9 - 1 = 8$ grados de libertad. Para un nivel de significancia $\alpha = 0.05$, el valor crítico de rechazo es $\chi_{0.95}^2(8) = 15.51$.
+
+### B. Desviación Absoluta Media (MAD)
+En auditorías con volúmenes masivos de datos ($N > 100,000$), el test de $\chi^2$ suele ser hiper-sensible. Se complementa con el estadístico MAD:
+
+$$
+\text{MAD} = \frac{1}{9} \sum_{d=1}^9 \big|\,p_{\text{obs}}(d) - P(D_1 = d)\,\big|
+$$
+
+Según los umbrales de Nigrini (2012):
+- $\text{MAD} < 0.006$: Conformidad estricta.
+- $0.006 \le \text{MAD} < 0.012$: Conformidad aceptable.
+- $0.012 \le \text{MAD} < 0.015$: Inconformidad marginal.
+- $\text{MAD} \ge 0.015$: No conforme (alerta para auditoría sustantiva profunda).
+
+---
+
+## 4. Implementación en Python para Auditoría
+
+El siguiente script en Python permite auditar un libro contable en formato tabular utilizando `pandas` y `scipy`:
+
+```python
+import numpy as np
+import pandas as pd
+from scipy.stats import chisquare
+
+def analizar_benford(valores: pd.Series):
+    """
+    Analiza una serie de montos monetarios según la Ley de Benford.
+    """
+    # Filtrar valores positivos y mayores a cero
+    validos = valores[valores > 0].dropna()
+    
+    # Extraer primer dígito significativo
+    primeros_digitos = validos.astype(str).str.extract(r'([1-9])')[0].astype(int)
+    n = len(primeros_digitos)
+    
+    # Frecuencias esperadas
+    digitos = np.arange(1, 10)
+    prob_esperada = np.log10(1 + 1 / digitos)
+    esperados = prob_esperada * n
+    
+    # Frecuencias observadas
+    conteo = primeros_digitos.value_counts().reindex(digitos, fill_value=0)
+    observados = conteo.values
+    prob_observada = observados / n
+    
+    # Test Chi-cuadrado
+    chi2_stat, p_val = chisquare(f_obs=observados, f_exp=esperados)
+    mad = np.mean(np.abs(prob_observada - prob_esperada))
+    
+    return pd.DataFrame({
+        "Dígito": digitos,
+        "Observados": observados,
+        "Esperados": np.round(esperados, 1),
+        "P_Obs": prob_observada,
+        "P_Esp": prob_esperada
+    }), {"Chi2": chi2_stat, "p-value": p_val, "MAD": mad, "Total_Muestras": n}
+```
+
+---
+
+## 5. Dónde Aplicar y Dónde NO Aplicar
+
+::: {.callout-tip icon=true}
+### Cuándo Sí Aplica Benford
+- Libros mayores y transacciones de gastos operacionales (OPEX).
+- Reembolsos de empleados y órdenes de compra.
+- Cuentas por cobrar y cuentas por pagar.
+:::
+
+::: {.callout-warning icon=true}
+### Cuándo NO Aplica Benford
+- Cifras con límites regulatorios o techos rígidos (ej. reembolsos con tope fijo de \$50.000).
+- Identificadores o códigos secuenciales (RUT, números de factura, IDs de cliente).
+- Variables con rangos estrechos (ej. estaturas o temperaturas).
+:::
+
+---
+
+## 6. Integración en Ambientes de Producción
+
+En sistemas de auditoría continua, este análisis se programa para ejecutarse de forma desatendida mediante trabajos nocturnos en Python/SQL. Las desviaciones anómalas en cuentas contables específicas disparan alertas tempranas dirigidas a los supervisores de auditoría en plataformas como **Power BI Server** o **Teams**.

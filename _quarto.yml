@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Maximiliano Mena Pinto"
-  description: "Portafolio profesional de Maximiliano Mena Pinto - Data Scientist & Contador Auditor"
+  description: "Portafolio profesional y blog de Maximiliano Mena Pinto - Data Scientist & Contador Auditor"
   favicon: assets/img/favicon.svg
   site-url: "https://maxmliano.github.io"
   
@@ -13,6 +13,8 @@ website:
     left:
       - text: "Inicio"
         href: index.qmd
+      - text: "Blog"
+        href: blog/index.qmd
       - text: "Proyectos"
         href: proyectos/index.qmd
       - text: "Currículum"
@@ -32,7 +34,7 @@ website:
 
   page-footer:
     left: "Maximiliano Antonio Mena Pinto"
-    center: "Construido con [Quarto](https://quarto.org) · Alojado en [GitHub Pages](https://pages.github.com)"
+    center: "Construido con [Quarto](https://quarto.org) · Alojado en [GitHub Pages](https://pages.github.com) &nbsp;|&nbsp; [![Visitas](https://komarev.com/ghpvc/?username=maxmliano&label=Visitas&color=1d72b8&style=flat)](https://github.com/maxmliano)"
     right: "[Subir 🔝](#)"
 
 format:
@@ -47,3 +49,4 @@ format:
     smooth-scroll: true
     code-copy: true
     code-overflow: wrap
+    html-math-method: katex

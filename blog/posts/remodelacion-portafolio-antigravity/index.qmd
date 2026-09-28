@@ -1,0 +1,116 @@
+---
+title: "Remodelé mi Portafolio y Blog usando Antigravity en VS Code"
+description: "Cómo migré una web estática en HTML/CSS tradicional a un ecosistema moderno en Quarto, aprovechando las capacidades agénticas de Antigravity en VS Code para automatizar refactorizaciones, estilos responsivos y despliegue con GitHub Actions."
+author: "Maximiliano Antonio Mena Pinto"
+date: "2026-09-28"
+categories: [Antigravity, AI, Quarto, GitHub Actions, Web Development, Productividad]
+toc: true
+---
+
+## 1. El Punto de Partida
+
+Durante bastante tiempo, mi portafolio web consistía en un repositorio tradicional de **GitHub Pages** construido a base de archivos HTML individuales, hojas de estilo CSS creadas a mano y scripts mínimos en JavaScript. 
+
+Si bien cumplía la función básica de mostrar mis proyectos y enlazar mi currículum, mantenerlo presentaba limitaciones claras:
+- **Falta de modularidad:** Cada página repetía la barra de navegación y el pie de página. Un cambio menor requería editar múltiples archivos.
+- **Dificultad para escribir artículos técnicos:** Para publicar análisis de datos o fórmulas matemáticas, era necesario insertar etiquetas HTML extensas y configurar bibliotecas externas manualmente.
+- **Sin soporte nativo para código reproducible:** No existía una integración directa con notebooks (`.ipynb`) o scripts de Python/R.
+
+Buscando una solución diseñada para perfiles analíticos y científicos, decidí dar el salto a **Quarto**. Para acelerar la transición de manera integral, utilicé **Antigravity**, el asistente agéntico de desarrollo en VS Code.
+
+---
+
+## 2. ¿Por qué Quarto?
+
+Quarto se ha consolidado como el estándar *de facto* para la comunicación científica y técnica:
+
+::: {.callout-note icon=true}
+### Ventajas Clave de Quarto para Data Science
+- **Soporte matemático KaTeX / MathJax:** Permite escribir ecuaciones complejas con la misma elegancia que en un paper de investigación.
+- **Estructura tipo Blog y Catálogos:** Genera automáticamente vistas en cuadrícula (*grid*), filtros por categorías, barras de búsqueda y tiempo estimado de lectura.
+- **Modo Claro / Oscuro nativo:** Proporciona alternancia de temas accesible sin necesidad de scripts externos.
+- **Flujo de despliegue continuo:** Se integra directamente con **GitHub Actions** para compilar y publicar en la nube tras cada `git push`.
+:::
+
+---
+
+## 3. El Flujo de Trabajo Agéntico con Antigravity
+
+A diferencia de un asistente de chat convencional donde solo se copian y pegan fragmentos aislados, **Antigravity** operó como un compañero de programación en pair-programming con acceso directo al espacio de trabajo en VS Code:
+
+### A. Diagnóstico e Instalación del Entorno
+En cuestión de segundos, la herramienta verificó el estado de mi máquina (Git, Python 3.12 y la ausencia de Quarto CLI). Ejecutó la instalación de Quarto vía `winget` en segundo plano y creó una rama de seguridad (`feature/quarto-migration`) para no alterar el sitio en producción.
+
+```bash
+# Instalación automatizada y creación de rama protegida
+winget install --id Posit.Quarto -e
+git checkout -b feature/quarto-migration
+```
+
+### B. Modularización y Limpieza de Proyectos
+El agente analizó mis archivos HTML existentes y los transformó en artículos limpios en Markdown (`.qmd`), agrupando cada proyecto en su propio directorio con sus recursos visuales locales:
+
+```text
+proyectos/
+├── web-scraping-auditoria/       # Extracción de valores cuota en CMF con Flask
+├── powerapps-gestion-equipos/    # Monitoreo operativo con Microsoft Power Platform
+├── reportes-powerbi-planificacion/ # People Analytics y simulación de staffing
+├── costo-efectividad-farmacogenetica/ # Cadenas de Markov y evaluación en salud
+├── deteccion-objetos-jetson-yolo/ # Percepción Edge AI en NVIDIA Jetson Orin Nano
+└── robotica-arduino/             # Adquisición sensorial y pantallas OLED
+```
+
+### C. Iteración Visual y Resolución de Conflictos Web
+Durante la vista previa local (`quarto preview`), detectamos juntos detalles visuales:
+1. **Viñetas del Hero banner:** Se partían de forma incómoda al saltar de línea; se solucionó con `white-space: nowrap` y flexbox.
+2. **Homologación de botones:** Los botones de llamado a la acción tenían bordes y contrastes dispares; se unificaron bajo un diseño corporativo coherente.
+3. **Resolución de rutas relativas:** Corregimos la jerarquía de directorios para evitar colisiones entre rutas de carpetas y archivos en GitHub Pages.
+
+---
+
+## 4. Pipeline de Automatización con GitHub Actions
+
+Para asegurar que el blog y el portafolio se actualicen solos al publicar nuevas entradas, dejamos configurado el siguiente flujo en `.github/workflows/publish.yml`:
+
+```yaml
+name: Render and Publish Quarto Site
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render and Publish to gh-pages
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+---
+
+## 5. Conclusiones y Próximos Pasos
+
+La experiencia demostró que utilizar un agente como Antigravity no se limita a autocompletar código: acelera enormemente la toma de decisiones arquitectónicas, la detección temprana de bugs de entorno y la estandarización de buenas prácticas.
+
+Con esta nueva base, el sitio ahora cuenta con:
+- Un portafolio de proyectos interactivo.
+- Un **blog técnico** preparado para divulgar conceptos de estadística, modelado y auditoría continua.
+- Un currículum dinámico con descarga directa de PDF en español e inglés.
+
+¡Bienvenidos a este nuevo espacio!

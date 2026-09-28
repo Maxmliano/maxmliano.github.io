@@ -2,15 +2,22 @@
 title: ""
 page-layout: full
 listing:
-  id: proyectos-destacados
-  contents: "proyectos/*/*.qmd"
-  sort: "date desc"
-  type: grid
-  grid-columns: 3
-  image-height: 190px
-  max-items: 6
-  categories: false
-  fields: [image, date, title, description]
+  - id: ultimos-articulos
+    contents: "blog/posts/*/*.qmd"
+    sort: "date desc"
+    type: default
+    max-items: 3
+    categories: false
+    fields: [date, title, description, reading-time]
+  - id: proyectos-destacados
+    contents: "proyectos/*/*.qmd"
+    sort: "date desc"
+    type: grid
+    grid-columns: 3
+    image-height: 190px
+    max-items: 6
+    categories: false
+    fields: [image, date, title, description]
 ---
 
 ::: {.hero-banner}
@@ -31,16 +38,30 @@ Estudiante de **Magíster en Estadística** en la Pontificia Universidad Católi
 :::
 
 ::: {.hero-actions}
-<a href="#proyectos" class="hero-btn"><i class="bi bi-folder2-open"></i> Ver Proyectos</a>
+<a href="blog/index.qmd" class="hero-btn"><i class="bi bi-journal-text"></i> Blog Técnico</a>
+<a href="proyectos/index.qmd" class="hero-btn"><i class="bi bi-folder2-open"></i> Proyectos</a>
 <a href="cv.qmd" class="hero-btn"><i class="bi bi-file-earmark-person"></i> Currículum Vitae</a>
 <a href="about.qmd" class="hero-btn"><i class="bi bi-person-badge"></i> Sobre Mí</a>
 :::
 :::
 :::
 
-## Proyectos Destacados {#proyectos}
+## 📝 Últimos Artículos del Blog {#blog}
 
-Una muestra de mis trabajos más recientes en analítica avanzada, automatización, investigación y sistemas:
+Notas técnicas, formulaciones matemáticas y ensayos sobre ciencia de datos, estadística y control:
+
+::: {#ultimos-articulos}
+:::
+
+::: {.text-center .mt-3 .mb-5}
+[Explorar todos los artículos del blog ➔](blog/index.qmd){.btn .btn-outline-primary}
+:::
+
+---
+
+## 💻 Proyectos y Soluciones Aplicadas {#proyectos}
+
+Desarrollo de software, arquitecturas en producción y sistemas embebidos:
 
 ::: {#proyectos-destacados}
 :::
