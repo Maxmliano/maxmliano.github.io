@@ -14,3 +14,4 @@ title-block-banner: true
 ---
 
 Espacio dedicado a la divulgación técnica, derivaciones matemáticas reproducibles, arquitectura de software y metodologías cuantitativas aplicadas a finanzas, salud y datos.
+

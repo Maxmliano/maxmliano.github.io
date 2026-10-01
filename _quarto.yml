@@ -19,8 +19,6 @@ website:
         href: proyectos/index.qmd
       - text: "Currículum"
         href: cv.qmd
-      - text: "Sobre Mí"
-        href: about.qmd
     right:
       - icon: github
         href: https://github.com/maxmliano
@@ -50,3 +48,4 @@ format:
     code-copy: true
     code-overflow: wrap
     html-math-method: katex
+

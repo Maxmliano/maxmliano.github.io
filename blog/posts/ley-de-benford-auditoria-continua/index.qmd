@@ -137,3 +137,4 @@ def analizar_benford(valores: pd.Series):
 ## 6. Integración en Ambientes de Producción
 
 En sistemas de auditoría continua, este análisis se programa para ejecutarse de forma desatendida mediante trabajos nocturnos en Python/SQL. Las desviaciones anómalas en cuentas contables específicas disparan alertas tempranas dirigidas a los supervisores de auditoría en plataformas como **Power BI Server** o **Teams**.
+

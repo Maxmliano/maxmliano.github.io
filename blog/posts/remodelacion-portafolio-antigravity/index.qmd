@@ -1,6 +1,6 @@
 ---
 title: "Remodelé mi Portafolio y Blog usando Antigravity en VS Code"
-description: "Cómo migré una web estática en HTML/CSS tradicional a un ecosistema moderno en Quarto, aprovechando las capacidades agénticas de Antigravity en VS Code para automatizar refactorizaciones, estilos responsivos y despliegue con GitHub Actions."
+description: "Migré una web estática en HTML/CSS tradicional a un ecosistema moderno en Quarto, aprovechando las capacidades agénticas de Antigravity en VS Code para automatizar refactorizaciones, estilos responsivos y despliegue con GitHub Actions."
 author: "Maximiliano Antonio Mena Pinto"
 date: "2026-09-28"
 categories: [Antigravity, AI, Quarto, GitHub Actions, Web Development, Productividad]
@@ -114,3 +114,4 @@ Con esta nueva base, el sitio ahora cuenta con:
 - Un currículum dinámico con descarga directa de PDF en español e inglés.
 
 ¡Bienvenidos a este nuevo espacio!
+

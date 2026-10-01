@@ -140,3 +140,4 @@ class BayesianLinear(nn.Module):
 La combinación de **modelos mecanísticos basados en fisiología (PBPK)** con **redes neuronales bayesianas** permite salvar la brecha entre el conocimiento biológico a priori y la flexibilidad de aproximación universal del Deep Learning, salvaguardando la toma de decisiones médicas mediante intervalos de credibilidad rigurosos.
 
 *(En futuras entregas profundizaremos en el acoplamiento de BNNs con Ecuaciones Diferenciales Ordinarias Neuronales - Neural ODEs).*
+
