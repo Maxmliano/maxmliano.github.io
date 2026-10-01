@@ -205,10 +205,17 @@ body.quarto-dark .timeline-period {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding: 1.25rem;
-  background-color: var(--bs-tertiary-bg, #f8f9fa);
+  background-color: rgba(29, 114, 184, 0.08); /* Fondo azul sutil en modo claro */
   border-radius: 12px;
-  border: 1px solid var(--bs-border-color, #dee2e6);
+  border: 1px solid rgba(29, 114, 184, 0.2);
   align-items: center;
+}
+
+/* Ajuste específico para Modo Nocturno */
+body.quarto-dark .cv-action-bar {
+  background-color: rgba(255, 255, 255, 0.05); /* Fondo oscuro translúcido */
+  border-color: rgba(255, 255, 255, 0.15);     /* Borde suave */
+  color: #e0e0e0;                              /* Texto claro perfectamente legible */
 }
